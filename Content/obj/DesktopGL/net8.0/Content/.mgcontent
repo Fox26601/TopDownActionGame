@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Player.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/enemy.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Chest.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/key.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/door.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Bat_Fly.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Bat_Attack.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Bat_Hit.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Bat_Death.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Pebble_Idle.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Pebble_Hit.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Pebble_Death.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Bones_SingleSkull_Fly.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Bones_SingleSkull_Hit.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/buttonFont.spritefont</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/messageFont.spritefont</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/background.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Mayor_Idle.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/Vendor_Idle.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/health_potion.png</File>
+    <File>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/rockscavetree.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

@@ -1,0 +1,121 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Player.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Player.png
+
+#begin enemy.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:enemy.png
+
+#begin Chest.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Chest.png
+
+#begin key.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:key.png
+
+#begin door.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:door.png
+
+#begin Bat_Fly.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Bat_Fly.png
+
+#begin Bat_Attack.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Bat_Attack.png
+
+#begin Bat_Hit.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Bat_Hit.png
+
+#begin Bat_Death.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Bat_Death.png
+
+#begin Pebble_Idle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Pebble_Idle.png
+
+
+
+#begin Pebble_Hit.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Pebble_Hit.png
+
+#begin Pebble_Death.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Pebble_Death.png
+
+#begin Bones_SingleSkull_Fly.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Bones_SingleSkull_Fly.png
+
+#begin Bones_SingleSkull_Hit.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Bones_SingleSkull_Hit.png
+
+#begin buttonFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/build:buttonFont.spritefont
+
+#begin messageFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/build:messageFont.spritefont
+
+#begin background.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:background.png
+
+#begin Mayor_Idle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Mayor_Idle.png
+
+#begin Vendor_Idle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Vendor_Idle.png
+
+#begin health_potion.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:health_potion.png
+
+#begin rockscavetree.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:rockscavetree.png

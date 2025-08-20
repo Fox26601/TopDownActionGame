@@ -1,0 +1,10 @@
+{
+  "Resolution": {
+    "Width": 1024,
+    "Height": 768
+  },
+  "IsFullscreen": true,
+  "MasterVolume": 1,
+  "MusicVolume": 0.8,
+  "SFXVolume": 0.9
+}

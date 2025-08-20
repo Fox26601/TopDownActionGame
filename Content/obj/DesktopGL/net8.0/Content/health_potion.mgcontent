@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/health_potion.png</SourceFile>
+  <SourceTime>2023-10-09T11:27:42+03:00</SourceTime>
+  <DestFile>C:/Users/DaniL/Tiltan/MonoGame-develop/IsometricActionGame/Content/bin/DesktopGL/Content/health_potion.xnb</DestFile>
+  <DestTime>2025-08-19T22:45:39.4795632+03:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2025-06-02T13:31:02+03:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2025-06-02T13:31:02+03:00</ProcessorTime>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>
