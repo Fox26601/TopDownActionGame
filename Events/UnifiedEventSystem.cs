@@ -192,29 +192,39 @@ namespace IsometricActionGame.Events
             _player.Inventory.OnGoldChanged += (gold) => 
                 PublishGoldChanged(_player.Inventory.Gold, gold, "Transaction");
             
-            _player.Inventory.OnInventoryChanged += () => 
-            {
-                // Calculate total items in inventory
-                int totalItems = 0;
-                for (int x = 0; x < Inventory.Inventory.INVENTORY_WIDTH; x++)
-                {
-                    for (int y = 0; y < Inventory.Inventory.INVENTORY_HEIGHT; y++)
-                    {
-                        if (_player.Inventory.GetItem(x, y) != null)
-                            totalItems++;
-                    }
-                }
-                // Add quick access items
-                for (int i = 0; i < Inventory.Inventory.QUICK_ACCESS_SLOTS; i++)
-                {
-                    if (_player.Inventory.GetQuickAccessItem(i) != null)
-                        totalItems++;
-                }
-                PublishInventoryChanged(totalItems, 0, false);
-            };
+
+            // _player.Inventory.OnInventoryChanged += () => 
+            // {
+            //     // Calculate total items in inventory
+            //     int totalItems = 0;
+            //     for (int x = 0; x < Inventory.Inventory.INVENTORY_WIDTH; x++)
+            //     {
+            //         for (int y = 0; y < Inventory.Inventory.INVENTORY_HEIGHT; y++)
+            //         {
+            //             if (_player.Inventory.GetItem(x, y) != null)
+            //                 totalItems++;
+            //         }
+            //     }
+            //     // Add quick access items
+            //     for (int i = 0; i < Inventory.Inventory.QUICK_ACCESS_SLOTS; i++)
+            //     {
+            //         if (_player.Inventory.GetQuickAccessItem(i) != null)
+            //             totalItems++;
+            //         }
+            //     PublishInventoryChanged(totalItems, 0, false);
+            // };
             
             _player.Inventory.OnItemDiscarded += (item) => 
                 PublishItemDiscarded(item, _player.WorldPosition, "Manual");
+                
+            // Subscribe to health potion auto-assignment events
+            GameEventSystem.Instance?.Subscribe<object>(GameEvents.HEALTH_POTION_AUTO_ASSIGNED, (data) => 
+            {
+                var slotIndex = GetPropertyValue<int>(data, "SlotIndex");
+                var quantity = GetPropertyValue<int>(data, "Quantity");
+                var wasFromInventory = GetPropertyValue<bool>(data, "WasFromInventory");
+                PublishHealthPotionAutoAssigned(slotIndex, quantity, wasFromInventory);
+            });
         }
         
         private void SubscribeToUIEvents()
@@ -243,6 +253,18 @@ namespace IsometricActionGame.Events
             
             _questManager.OnQuestRefused += (quest) => 
                 PublishQuestRefused(quest);
+                
+            _questManager.OnReturnQuestAutoAssigned += (quest) => 
+                PublishReturnQuestAutoAssigned(quest);
+                
+            _questManager.OnReturnQuestCompleted += (quest) => 
+                PublishReturnQuestCompleted(quest);
+                
+            _questManager.OnPebbleDefeated += () => 
+                PublishPebbleDefeated();
+                
+            _questManager.OnPebbleStateReset += () => 
+                PublishPebbleStateReset();
         }
         
         private void SubscribeToDialogueEvents()
@@ -386,6 +408,13 @@ namespace IsometricActionGame.Events
             UpdateStatistics(GameEvents.INVENTORY_CHANGED);
         }
         
+        public void PublishHealthPotionAutoAssigned(int slotIndex, int quantity, bool wasFromInventory)
+        {
+            var eventData = new HealthPotionAutoAssignedEventData(slotIndex, quantity, wasFromInventory);
+            _eventSystem.Publish(GameEvents.HEALTH_POTION_AUTO_ASSIGNED, eventData);
+            UpdateStatistics(GameEvents.HEALTH_POTION_AUTO_ASSIGNED);
+        }
+        
         // Game State Events
         public void PublishGameStateChanged(string oldState, string newState, string reason = null)
         {
@@ -475,6 +504,42 @@ namespace IsometricActionGame.Events
             UpdateStatistics(GameEvents.QUEST_REFUSED);
         }
         
+        public void PublishReturnQuestAutoAssigned(Quest quest)
+        {
+            System.Diagnostics.Debug.WriteLine($"UnifiedEventSystem: Publishing RETURN_QUEST_AUTO_ASSIGNED event for quest: {quest?.Title}");
+            _eventSystem.Publish(GameEvents.RETURN_QUEST_AUTO_ASSIGNED, quest);
+            UpdateStatistics(GameEvents.RETURN_QUEST_AUTO_ASSIGNED);
+        }
+        
+        public void PublishReturnQuestCompleted(Quest quest)
+        {
+            System.Diagnostics.Debug.WriteLine($"UnifiedEventSystem: Publishing RETURN_QUEST_COMPLETED event for quest: {quest?.Title}");
+            _eventSystem.Publish(GameEvents.RETURN_QUEST_COMPLETED, quest);
+            UpdateStatistics(GameEvents.RETURN_QUEST_COMPLETED);
+        }
+        
+        public void PublishQuestRewardGranted(Quest quest, int goldReward, string questType = null, bool hasPebbleObjective = false)
+        {
+            var eventData = new QuestEventArgs(quest, goldReward, questType, hasPebbleObjective);
+            _eventSystem.Publish(GameEvents.QUEST_REWARD_GRANTED, eventData);
+            UpdateStatistics(GameEvents.QUEST_REWARD_GRANTED);
+        }
+        
+        // Pebble Events
+        public void PublishPebbleDefeated()
+        {
+            System.Diagnostics.Debug.WriteLine("UnifiedEventSystem: Publishing PEBBLE_DEFEATED event");
+            _eventSystem.Publish<object>(GameEvents.PEBBLE_DEFEATED, null);
+            UpdateStatistics(GameEvents.PEBBLE_DEFEATED);
+        }
+        
+        public void PublishPebbleStateReset()
+        {
+            System.Diagnostics.Debug.WriteLine("UnifiedEventSystem: Publishing PEBBLE_STATE_RESET event");
+            _eventSystem.Publish<object>(GameEvents.PEBBLE_STATE_RESET, null);
+            UpdateStatistics(GameEvents.PEBBLE_STATE_RESET);
+        }
+        
         #endregion
         
         #region Statistics and Debugging
@@ -544,6 +609,29 @@ namespace IsometricActionGame.Events
         }
         
         #endregion
+        
+        /// <summary>
+        /// Helper method to extract property values from anonymous objects
+        /// </summary>
+        private T GetPropertyValue<T>(object obj, string propertyName)
+        {
+            if (obj == null) return default(T);
+            
+            try
+            {
+                var property = obj.GetType().GetProperty(propertyName);
+                if (property != null && property.PropertyType == typeof(T))
+                {
+                    return (T)property.GetValue(obj);
+                }
+            }
+            catch
+            {
+                // Ignore reflection errors
+            }
+            
+            return default(T);
+        }
         
         public void Dispose()
         {

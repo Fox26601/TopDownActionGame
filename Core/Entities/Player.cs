@@ -309,8 +309,18 @@ namespace IsometricActionGame
         
         public void Heal(int amount)
         {
-            _healthSystem.Heal(amount);
-            _console?.AddMessage($"Player healed {amount}! Health: {CurrentHealth}/{MaxHealth}", Color.Green);
+            try
+            {
+                System.Diagnostics.Debug.WriteLine($"Player.Heal: Called with amount={amount}, current health={CurrentHealth}/{MaxHealth}");
+                _healthSystem.Heal(amount);
+                System.Diagnostics.Debug.WriteLine($"Player.Heal: Completed, new health={CurrentHealth}/{MaxHealth}");
+                // Remove console message here - it will be handled by event system
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Player.Heal: Exception occurred: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Player.Heal: Stack trace: {ex.StackTrace}");
+            }
         }
         
         public void RestoreFullHealth()

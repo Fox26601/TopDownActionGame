@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DaniL\\Tiltan\\MonoGame-develop\\IsometricActionGame\\IsometricActionGame.csproj": {}
+    "C:\\Users\\DaniL\\Tiltan\\IsometricActionGame\\IsometricActionGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DaniL\\Tiltan\\MonoGame-develop\\IsometricActionGame\\IsometricActionGame.csproj": {
+    "C:\\Users\\DaniL\\Tiltan\\IsometricActionGame\\IsometricActionGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DaniL\\Tiltan\\MonoGame-develop\\IsometricActionGame\\IsometricActionGame.csproj",
+        "projectUniqueName": "C:\\Users\\DaniL\\Tiltan\\IsometricActionGame\\IsometricActionGame.csproj",
         "projectName": "IsometricActionGame",
-        "projectPath": "C:\\Users\\DaniL\\Tiltan\\MonoGame-develop\\IsometricActionGame\\IsometricActionGame.csproj",
+        "projectPath": "C:\\Users\\DaniL\\Tiltan\\IsometricActionGame\\IsometricActionGame.csproj",
         "packagesPath": "C:\\Users\\DaniL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DaniL\\Tiltan\\MonoGame-develop\\IsometricActionGame\\obj\\",
+        "outputPath": "C:\\Users\\DaniL\\Tiltan\\IsometricActionGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\DaniL\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,10 +7,12 @@ using IsometricActionGame.NPCs;
 using IsometricActionGame.Quests;
 using IsometricActionGame.Dialogue;
 using IsometricActionGame.Items;
+using IsometricActionGame.Inventory;
 using IsometricActionGame.Settings;
 using IsometricActionGame.Graphics;
 using IsometricActionGame.Events;
 using IsometricActionGame.Events.EventHandlers;
+using IsometricActionGame.Events.EventData;
 using IsometricActionGame.SaveSystem;
 using IsometricActionGame.Input;
 
@@ -28,6 +30,12 @@ namespace IsometricActionGame;
 
 public class Game1 : Game
 {
+    // Static instance for global access
+    public static Game1 Instance { get; private set; }
+    
+    // Public property for player access
+    public Player Player => _player;
+    
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private GameMap _map;
@@ -56,8 +64,8 @@ public class Game1 : Game
     private Input.Handlers.DialogueInputHandler _dialogueInputHandler;
     
 
-    public QuestManager _questManager;
-    public DialogueManager _dialogueManager;
+        public QuestManager _questManager;
+        public DialogueManager _dialogueManager;
     private Mayor _mayor;
     private Vendor _vendor;
     private SpriteFont _uiFont;
@@ -83,6 +91,7 @@ public class Game1 : Game
     private GameRestartManager _restartManager;
     private LevelSystem _levelSystem;
     
+    
     // Save System
     private GameSaveLoadManager _saveLoadManager;
     private SaveManager _saveManager;
@@ -95,6 +104,8 @@ public class Game1 : Game
 
     public Game1()
     {
+        // Set static instance
+        Instance = this;
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         
@@ -159,6 +170,9 @@ public class Game1 : Game
             // Initialize RPG systems
             _questManager = new QuestManager();
             LogToFile("Game1.Initialize: QuestManager created");
+            
+            // Subscribe QuestManager to Pebble events
+            LogToFile("Game1.Initialize: QuestManager Pebble events setup");
             
             _dialogueManager = new DialogueManager();
             LogToFile("Game1.Initialize: DialogueManager created");
@@ -297,13 +311,7 @@ public class Game1 : Game
         {
             foreach (var target in hitTargets)
             {
-                string targetName = target switch
-                {
-                    Bat => "Bat",
-                    Pebble => "Pebble",
-                    Player => "Player",
-                    _ => "Unknown"
-                };
+                string targetName = target.GetType().Name;
                 
                 _console?.AddMessage($"Player hit {targetName}!", GameConstants.Colors.CONSOLE_ORANGE);
             }
@@ -454,8 +462,8 @@ public class Game1 : Game
             // Initialize UI panels with scaling
             var currentRes = _resolutionManager.CurrentResolution;
             
-            _deathPanel = new DeathPanel(_uiFont, currentRes.Width, currentRes.Height);
-            _pauseMenu = new PauseMenu(_uiFont, currentRes.Width, currentRes.Height);
+            _deathPanel = new DeathPanel(_uiFont, currentResolution.Width, currentResolution.Height);
+            _pauseMenu = new PauseMenu(_uiFont, currentResolution.Width, currentResolution.Height);
             
             // Initialize dialogue manager with scaling
             _dialogueManager.Initialize(currentRes.Width, currentRes.Height, GraphicsDevice);
@@ -549,9 +557,34 @@ public class Game1 : Game
     private void OnPlayerDeath(IAttackable player)
     {
         _deathPanel.Show();
+        
+        // Disable player movement during death
+        _player?.SetCanMove(false);
     }
     
-
+    private void HandleRestartFromDeath()
+    {
+        try
+        {
+            System.Diagnostics.Debug.WriteLine("Game1.HandleRestartFromDeath: Called");
+            
+            // Hide death panel
+            _deathPanel?.Hide();
+            
+            // Use existing comprehensive reset method
+            ReinitializeGameSystems();
+            
+            // Enable player movement
+            _player?.SetCanMove(true);
+            
+            _console?.AddMessage("Game restarted from death!", GameConstants.Colors.CONSOLE_GREEN);
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Game1.HandleRestartFromDeath: Error - {ex.Message}");
+            _console?.AddMessage($"Error restarting from death: {ex.Message}", GameConstants.Colors.CONSOLE_RED);
+        }
+    }
     
     private void ExitGame()
     {
@@ -590,6 +623,11 @@ public class Game1 : Game
             _console, _player, _questManager, _dialogueManager, _uiManager, 
             _levelSystem, _restartManager, Content, _pauseMenu, _deathPanel, _levelSystem?.LevelTransitionPanel);
         
+        // Initialize Health Potion Auto Assigner
+        
+        
+        // Subscribe QuestManager to Pebble events
+        _questManager.SubscribeToPebbleEvents();
 
         
         // Integration will happen in LoadContent after all components are initialized
@@ -612,20 +650,10 @@ public class Game1 : Game
                 // Execute attack logic
                 OnPlayerAttack(pos, dir);
             };
-            _player.OnDamage += (entity, damage) => 
-            {
-                // Use Unified Event System for type-safe event publishing
-                _unifiedEventSystem.PublishPlayerDamaged(damage, _player.WorldPosition, entity?.GetType().Name);
-            };
-            _player.OnHeal += (entity, amount) => 
-            {
-                // Use Unified Event System for type-safe event publishing
-                _unifiedEventSystem.PublishPlayerHealed(amount, "HealthPotion");
-            };
+            // Player events are now handled by UnifiedEventSystem
+            // Only handle death panel display here
             _player.OnDeath += (entity) => 
             {
-                // Use Unified Event System for type-safe event publishing
-                _unifiedEventSystem.PublishPlayerDeath(_player.WorldPosition, "Combat");
                 // Show death panel
                 OnPlayerDeath(entity);
             };
@@ -638,26 +666,27 @@ public class Game1 : Game
                     var oldGold = _player.Inventory.Gold - gold;
                     _unifiedEventSystem.PublishGoldChanged(oldGold, _player.Inventory.Gold, "Transaction");
                 };
-                _player.Inventory.OnInventoryChanged += () => 
-                {
-                    // Calculate total items in inventory
-                    int totalItems = 0;
-                    for (int x = 0; x < Inventory.Inventory.INVENTORY_WIDTH; x++)
-                    {
-                        for (int y = 0; y < Inventory.Inventory.INVENTORY_HEIGHT; y++)
-                        {
-                            if (_player.Inventory.GetItem(x, y) != null)
-                                totalItems++;
-                        }
-                    }
-                    // Add quick access items
-                    for (int i = 0; i < Inventory.Inventory.QUICK_ACCESS_SLOTS; i++)
-                    {
-                        if (_player.Inventory.GetQuickAccessItem(i) != null)
-                            totalItems++;
-                    }
-                    _unifiedEventSystem.PublishInventoryChanged(totalItems, 0, false);
-                };
+    
+                // _player.Inventory.OnInventoryChanged += () => 
+                // {
+                //     // Calculate total items in inventory
+                //     int totalItems = 0;
+                //     for (int x = 0; x < Inventory.Inventory.INVENTORY_WIDTH; x++)
+                //     {
+                //         for (int y = 0; y < Inventory.Inventory.INVENTORY_HEIGHT; y++)
+                //         {
+                //             if (_player.Inventory.GetItem(x, y) != null)
+                //                 totalItems++;
+                //         }
+                //     }
+                //     // Add quick access items
+                //     for (int i = 0; i < Inventory.Inventory.QUICK_ACCESS_SLOTS; i++)
+                //     {
+                //         if (_player.Inventory.GetQuickAccessItem(i) != null)
+                //             totalItems++;
+                //     }
+                //     _unifiedEventSystem.PublishInventoryChanged(totalItems, 0, false);
+                // };
                 _player.Inventory.OnItemDiscarded += (item) => 
                 {
                     _unifiedEventSystem.PublishItemDiscarded(item, _player.WorldPosition, "Manual");
@@ -706,9 +735,7 @@ public class Game1 : Game
                 _unifiedEventSystem.PublishGameStateChanged("Playing", "Completed", "Door Opened");
                 // Publish DOOR_OPENED event for other systems
                 eventSystem.Publish(GameEvents.DOOR_OPENED, new { Door = d, Position = d.WorldPosition });
-                // Show level completion messages
-                _console?.AddMessage("Level completed! Door opened!", GameConstants.Colors.CONSOLE_GOLD);
-                _console?.AddMessage("Congratulations! You won!", GameConstants.Colors.CONSOLE_GOLD);
+                // Level completion messages are handled by LevelSystem
             };
         }
         
@@ -731,7 +758,7 @@ public class Game1 : Game
         // Integrate UI Panel events
         if (_deathPanel != null)
         {
-            _deathPanel.OnRestart += () => eventSystem.Publish<object>(GameEvents.GAME_RESTART, null);
+            _deathPanel.OnRestart += () => HandleRestartFromDeath();
             _deathPanel.OnLoadGame += () => HandleLoadFromDeathPanel();
             _deathPanel.OnMenu += () => eventSystem.Publish<object>(GameEvents.RETURN_TO_MENU, null);
             _deathPanel.OnExit += () => eventSystem.Publish<object>(GameEvents.GAME_EXIT, null);
@@ -745,6 +772,10 @@ public class Game1 : Game
             _pauseMenu.OnMenu += () => eventSystem.Publish<object>(GameEvents.RETURN_TO_MENU, null);
             _pauseMenu.OnExit += () => eventSystem.Publish<object>(GameEvents.GAME_EXIT, null);
         }
+
+        // Subscribe to game exit event
+        eventSystem.Subscribe<object>(GameEvents.GAME_EXIT, (data) => ExitGame());
+        
         
         // Integrate Save System events
         if (_saveSlotManager != null)
@@ -774,6 +805,7 @@ public class Game1 : Game
         {
             _uiManager.OnLoadGame += () => ShowLoadMenu();
             _uiManager.OnStartGame += () => HandleStartNewGame();
+            _uiManager.OnCloseGame += () => ExitGame();
         }
         
         // Subscribe to GameSettings events
@@ -785,6 +817,9 @@ public class Game1 : Game
         
         // Subscribe to chest creation events
         eventSystem.Subscribe<object>(GameEvents.CHEST_CREATED, OnChestCreated);
+        
+        // Subscribe to item dropped events (for enemy drops)
+        eventSystem.Subscribe<ItemDroppedEventData>(GameEvents.ITEM_DROPPED, OnItemDropped);
         
 
         
@@ -857,6 +892,13 @@ public class Game1 : Game
         // Subscribe to game state events for menu return
         eventSystem.Subscribe<object>(GameEvents.GAME_STOPPED, _ => HandleGameStopped());
         eventSystem.Subscribe<object>(GameEvents.SCENE_CLEAR_REQUESTED, _ => HandleSceneClear("menu_return"));
+        
+        // Subscribe to quick access usage events
+        eventSystem.Subscribe<object>(GameEvents.QUICK_ACCESS_USED, (data) => 
+        {
+            var slotIndex = GetPropertyValue<int>(data, "SlotIndex");
+            HandleQuickAccessUsed(slotIndex);
+        });
 
     }
     
@@ -928,6 +970,56 @@ public class Game1 : Game
         if (!foundInteractable)
         {
             _console?.AddMessage("Nothing to interact with nearby", GameConstants.Colors.CONSOLE_GRAY);
+        }
+    }
+    
+    /// <summary>
+    /// Handle quick access item usage from InputHandler events
+    /// </summary>
+    private void HandleQuickAccessUsed(int slotIndex)
+    {
+        try
+        {
+            System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: Called with slotIndex={slotIndex}");
+            
+            if (_player == null || !_gameStarted || _isLevelTransitionActive) 
+            {
+                System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: Early return - player={_player != null}, gameStarted={_gameStarted}, levelTransition={_isLevelTransitionActive}");
+                return;
+            }
+            
+            // Debug quick access slots state
+
+            
+            // Validate slot index
+            if (slotIndex < 0 || slotIndex >= Inventory.Inventory.QUICK_ACCESS_SLOTS)
+            {
+                _console?.AddMessage($"Invalid quick access slot: {slotIndex + 1}", GameConstants.Colors.CONSOLE_RED);
+                System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: Invalid slot index {slotIndex}");
+                return;
+            }
+            
+            System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: About to call UseQuickAccessItem");
+            
+            // Use the item in the quick access slot
+            bool used = _player.Inventory.UseQuickAccessItem(slotIndex, _player);
+            
+            System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: UseQuickAccessItem returned {used}");
+            
+            if (used)
+            {
+                _console?.AddMessage($"Used item from quick access slot {slotIndex + 1}", GameConstants.Colors.CONSOLE_CYAN);
+            }
+            else
+            {
+                _console?.AddMessage($"No usable item in quick access slot {slotIndex + 1}", GameConstants.Colors.CONSOLE_GRAY);
+            }
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: Exception occurred: {ex.Message}");
+            System.Diagnostics.Debug.WriteLine($"HandleQuickAccessUsed: Stack trace: {ex.StackTrace}");
+            _console?.AddMessage($"Error using quick access item: {ex.Message}", GameConstants.Colors.CONSOLE_RED);
         }
     }
     
@@ -1078,18 +1170,20 @@ public class Game1 : Game
         }
     }
 
-    private void OnItemDropped(object dropData)
+    private void OnItemDropped(ItemDroppedEventData data)
     {
-        // Extract dropped item from anonymous object
-        var droppedItem = GetPropertyValue<DroppedItem>(dropData, "DroppedItem");
-        var position = GetPropertyValue<Vector2>(dropData, "Position");
+        if (data?.Item == null) return;
         
-        if (droppedItem != null)
-        {
-            _droppedItems.Add(droppedItem);
-            _interactables.Add(droppedItem);
-            _console?.AddMessage($"Item dropped at {position}", GameConstants.Colors.CONSOLE_ORANGE);
-        }
+        // Create DroppedItem from the event data
+        float scale = data.Item is HealthPotion ? GameConstants.SpriteScale.HEALTH_POTION_SCALE : GameConstants.Graphics.DEFAULT_SPRITE_SCALE;
+        var droppedItem = new DroppedItem(data.DropPosition, data.Item, scale);
+        droppedItem.LoadContent(Content);
+        
+        _droppedItems.Add(droppedItem);
+        _interactables.Add(droppedItem);
+        
+        var sourceText = !string.IsNullOrEmpty(data.DropSource) ? $" from {data.DropSource}" : "";
+        _console?.AddMessage($"{data.Item.Name} dropped{sourceText}!", GameConstants.Colors.CONSOLE_ORANGE);
     }
     
     private void OnChestCreated(object chestData)
@@ -1366,6 +1460,9 @@ public class Game1 : Game
 
         if (!_gameStarted)
         {
+            // Manage quick access panel visibility in main menu
+            ManageQuickAccessVisibility();
+            
             // Ensure cursor is visible in main menu
             IsMouseVisible = CursorStateManager.ShouldShowCursor(
                 _gameStarted,
@@ -1401,6 +1498,9 @@ public class Game1 : Game
         // Update player with dialogue state and pause state
         bool shouldPausePlayer = _player.Inventory.IsOpen || _isGamePaused;
         _player.Update(gameTime, _dialogueManager.IsDialogueActive, shouldPausePlayer);
+        
+        // Manage quick access panel visibility based on UI state
+        ManageQuickAccessVisibility();
 
         // Update inventory - always update when open, even during normal gameplay
         if (_player.Inventory.IsOpen)
@@ -1620,18 +1720,9 @@ public class Game1 : Game
                 _spriteBatch.Draw(_tileTexture, new Rectangle(barX, barY, currentBarWidth, barHeight), healthColor);
             }
             
-            // Display gold in the bottom-right corner
+            // Display quest progress with scaled positioning
             if (_uiFont != null)
             {
-                var goldText = $"Gold: {_player.Inventory.Gold}";
-                var goldTextSize = _uiFont.MeasureString(goldText);
-                var currentRes = _resolutionManager.CurrentResolution;
-                var goldTextPos = new Vector2(
-                    currentRes.Width - goldTextSize.X - UIScalingManager.ScaleValue(GameConstants.UI.GOLD_DISPLAY_MARGIN_X), 
-                    currentRes.Height - goldTextSize.Y - UIScalingManager.ScaleValue(GameConstants.UI.GOLD_DISPLAY_MARGIN_Y));
-                _spriteBatch.DrawString(_uiFont, goldText, goldTextPos, GameConstants.Colors.CONSOLE_YELLOW);
-                
-                // Display quest progress with scaled positioning
                 var questText = _questManager.GetActiveQuestProgress();
                 var questTextPos = new Vector2(
                     UIScalingManager.ScaleValue(GameConstants.UI.MARGIN_SMALL), 
@@ -1645,14 +1736,21 @@ public class Game1 : Game
         
         // Font should already be loaded with console font
         
-        // Draw inventory - always draw when open, even when paused
-        if (_uiFont != null && _player.Inventory.IsOpen)
+        // Draw inventory and quick access panel
+        if (_uiFont != null)
         {
-            System.Diagnostics.Debug.WriteLine("Game1.Draw: Drawing inventory");
-            _player.Inventory.Draw(_spriteBatch, _uiFont);
+            // Always draw quick access panel, inventory panel only when open
+            if (_player.Inventory.IsOpen)
+            {
+                System.Diagnostics.Debug.WriteLine("Game1.Draw: Drawing inventory");
+                _player.Inventory.Draw(_spriteBatch, _uiFont);
+            }
+            else
+            {
+                // Draw only quick access panel when inventory is closed
+                _player.Inventory.DrawQuickAccessOnly(_spriteBatch, _uiFont);
+            }
         }
-        
-        // Quick access panel is now drawn by the inventory renderer
         
         if (_gameStarted)
         {
@@ -1870,6 +1968,7 @@ public class Game1 : Game
             System.Diagnostics.Debug.WriteLine("Game1.HandleLoadFromDeathPanel: Death panel is not visible, ignoring call");
         }
     }
+
     
     private void HandleStartNewGame()
     {
@@ -2035,23 +2134,9 @@ public class Game1 : Game
             // Reset player to initial state
             if (_player != null)
             {
-                _player.WorldPosition = GameConstants.World.PLAYER_START_POSITION;
-                _player.Heal(_player.MaxHealth); // Use Heal method instead of direct assignment
-                _player.HasKey = false;
+                // Use ResetToStartingState to properly restore health even if player is dead
+                _player.ResetToStartingState();
                 _player.SetCanMove(false);
-                // Clear inventory by removing all items
-                for (int x = 0; x < Inventory.Inventory.INVENTORY_WIDTH; x++)
-                {
-                    for (int y = 0; y < Inventory.Inventory.INVENTORY_HEIGHT; y++)
-                    {
-                        _player.Inventory.RemoveItem(x, y);
-                    }
-                }
-                // Clear quick access slots
-                for (int i = 0; i < Inventory.Inventory.QUICK_ACCESS_SLOTS; i++)
-                {
-                    _player.Inventory.RemoveQuickAccessItem(i);
-                }
             }
             
             // Recreate essential entities
@@ -2060,15 +2145,25 @@ public class Game1 : Game
             // Reset level system
             _levelSystem?.StartLevel(1);
             
-            // Reset quest system - clear active quests
+            // Reset quest system - use proper reset method
             if (_questManager != null)
             {
-                // QuestManager doesn't have ClearActiveQuests method, so we'll just complete all active quests
-                var activeQuests = _questManager.ActiveQuests.ToList();
-                foreach (var quest in activeQuests)
+                // Reset the extended quest directly to avoid collection modification issues
+                var extendedQuest = _questManager.GetExtendedKillBatsQuest();
+                if (extendedQuest != null)
                 {
-                    _questManager.CompleteQuest(quest);
+                    extendedQuest.Reset();
+                    System.Diagnostics.Debug.WriteLine("Game1.ReinitializeGameSystems: Extended quest reset directly");
                 }
+                
+                // Clear quest lists safely (if QuestManager has such methods)
+                _questManager.ClearQuests();
+            }
+            
+            // Reset Pebble state through QuestManager
+            if (_questManager != null)
+            {
+                _questManager.ResetPebbleState();
             }
             
             // Reset dialogue system - close any active dialogue
@@ -2146,6 +2241,34 @@ public class Game1 : Game
         catch (Exception ex)
         {
             _console?.AddMessage($"Error recreating entities: {ex.Message}", GameConstants.Colors.CONSOLE_RED);
+        }
+    }
+    
+    /// <summary>
+    /// Manage quick access panel visibility based on current UI state
+    /// </summary>
+    private void ManageQuickAccessVisibility()
+    {
+        if (_player?.Inventory == null) return;
+        
+        // Hide quick access panel when any UI panel is visible
+        bool shouldHideQuickAccess = 
+            _uiManager?.MenuActive == true ||
+            _uiManager?.SettingsActive == true ||
+            _pauseMenu?.IsVisible == true ||
+            _deathPanel?.IsVisible == true ||
+            _levelSystem?.LevelTransitionPanel?.IsVisible == true ||
+            _saveSlotManager?.IsVisible == true ||
+            _uiManager?.ExitConfirmationVisible == true ||
+            _dialogueManager?.IsDialogueActive == true;
+        
+        if (shouldHideQuickAccess)
+        {
+            _player.Inventory.HideQuickAccess();
+        }
+        else
+        {
+            _player.Inventory.ShowQuickAccess();
         }
     }
     

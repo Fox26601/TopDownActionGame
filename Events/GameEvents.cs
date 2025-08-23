@@ -32,6 +32,7 @@ namespace IsometricActionGame.Events
         public const string INVENTORY_OPENED = "inventory.opened";
         public const string INVENTORY_CLOSED = "inventory.closed";
         public const string QUICK_ACCESS_USED = "inventory.quick_access_used";
+        public const string HEALTH_POTION_AUTO_ASSIGNED = "inventory.health_potion_auto_assigned";
         
         // ===== QUEST EVENTS =====
         public const string QUEST_STARTED = "quest.started";
@@ -39,6 +40,13 @@ namespace IsometricActionGame.Events
         public const string QUEST_TURNED_IN = "quest.turned_in";
         public const string QUEST_REFUSED = "quest.refused";
         public const string QUEST_PROGRESS_UPDATED = "quest.progress_updated";
+        public const string RETURN_QUEST_AUTO_ASSIGNED = "quest.return_auto_assigned";
+        public const string RETURN_QUEST_COMPLETED = "quest.return_completed";
+        public const string QUEST_REWARD_GRANTED = "quest.reward_granted";
+        
+        // ===== PEBBLE STATE EVENTS =====
+        public const string PEBBLE_DEFEATED = "pebble.defeated";
+        public const string PEBBLE_STATE_RESET = "pebble.state_reset";
         
         // ===== DIALOGUE EVENTS =====
         public const string DIALOGUE_STARTED = "dialogue.started";
@@ -67,9 +75,9 @@ namespace IsometricActionGame.Events
         public const string GAME_STOPPED = "game.stopped";
         public const string GAME_RESTART = "game.restart";
         public const string GAME_EXIT = "game.exit";
+        public const string GAME_COMPLETED = "game.completed";
         public const string RETURN_TO_MENU = "game.return_to_menu";
         public const string GO_TO_MENU = "game.go_to_menu";
-        public const string GAME_COMPLETED = "game.completed";
         public const string GAME_STATE_CHANGED = "game.state_changed";
         public const string SCENE_CLEAR_REQUESTED = "game.scene_clear_requested";
         

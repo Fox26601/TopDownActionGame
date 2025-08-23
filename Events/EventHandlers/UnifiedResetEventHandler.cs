@@ -79,6 +79,7 @@ namespace IsometricActionGame.Events.EventHandlers
                 // This is a menu return, not a save load
                 HandleMenuReturn();
             }
+
         }
         
         private void HandleMenuReturn()

@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using IsometricActionGame.Core.Data;
+using System;
 
 namespace IsometricActionGame.Items
 {
@@ -8,13 +9,13 @@ namespace IsometricActionGame.Items
     {
         public int HealAmount { get; private set; } = GameConstants.Health.HEALTH_POTION_DEFAULT_HEAL;
 
-        public HealthPotion() : base("Health Potion", $"Restores {GameConstants.Health.HEALTH_POTION_DEFAULT_HEAL} health points", false, GameConstants.Items.DEFAULT_ITEM_QUANTITY)
+        public HealthPotion() : base("Health Potion", "Restores health points", false, GameConstants.Items.DEFAULT_ITEM_QUANTITY)
         {
             IsUsable = true;
             HealAmount = GameConstants.Health.HEALTH_POTION_DEFAULT_HEAL;
         }
 
-        public HealthPotion(int healAmount) : base("Health Potion", $"Restores {healAmount} health points", false, GameConstants.Items.DEFAULT_ITEM_QUANTITY)
+        public HealthPotion(int healAmount) : base("Health Potion", "Restores health points", false, GameConstants.Items.DEFAULT_ITEM_QUANTITY)
         {
             IsUsable = true;
             HealAmount = healAmount;
@@ -45,13 +46,31 @@ namespace IsometricActionGame.Items
 
         public override bool Use(Player player)
         {
-            if (player.CurrentHealth < player.MaxHealth)
+            try
             {
+                System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Called with player health: {player?.CurrentHealth}/{player?.MaxHealth}");
+                
+                if (player == null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Player is null");
+                    return false;
+                }
+                
+                // Always try to heal, even if at full health (for consistency)
+                System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Attempting to heal player by {HealAmount}");
                 player.Heal(HealAmount);
-                Quantity--;
+                System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Heal completed, new health: {player.CurrentHealth}/{player.MaxHealth}");
+                
+                // Note: Quantity is decremented in Inventory.UseQuickAccessItem
+                // Do not decrement here to avoid double decrement
                 return true;
             }
-            return false;
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Exception occurred: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Stack trace: {ex.StackTrace}");
+                return false;
+            }
         }
 
         public override void Draw(SpriteBatch spriteBatch, Vector2 position, float scale = GameConstants.Graphics.DEFAULT_SPRITE_SCALE)

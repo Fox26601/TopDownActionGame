@@ -39,14 +39,16 @@ namespace IsometricActionGame.Core.Helpers
 
         /// <summary>
         /// Calculate layer depth for proper rendering order
-        /// Y coordinate determines depth (higher Y = closer to camera)
+        /// Y coordinate determines depth (higher Y = further from camera = rendered behind)
         /// </summary>
         public static float CalculateLayerDepth(Vector2 worldPosition)
         {
             // Normalize Y position to 0.0-1.0 range based on map size
-            // Higher Y values get higher depth (rendered on top)
+            // Higher Y values get LOWER depth (rendered behind) - corrected for proper isometric rendering
             float normalizedY = worldPosition.Y / GameMap.Height;
-            return MathHelper.Clamp(GameConstants.LayerDepth.DEFAULT_DEPTH * 0.2f + normalizedY * GameConstants.LayerDepth.DEFAULT_DEPTH * 0.8f, GameConstants.LayerDepth.DEFAULT_DEPTH * 0.2f, GameConstants.LayerDepth.DEFAULT_DEPTH * 0.9f);
+            // Invert the Y calculation: higher Y = lower depth (behind)
+            float invertedY = 1.0f - normalizedY;
+            return MathHelper.Clamp(GameConstants.LayerDepth.DEFAULT_DEPTH * 0.2f + invertedY * GameConstants.LayerDepth.DEFAULT_DEPTH * 0.8f, GameConstants.LayerDepth.DEFAULT_DEPTH * 0.2f, GameConstants.LayerDepth.DEFAULT_DEPTH * 0.9f);
         }
 
         /// <summary>

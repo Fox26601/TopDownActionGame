@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using System.Text;
 
 namespace IsometricActionGame
 {
@@ -56,6 +57,43 @@ namespace IsometricActionGame
             if (x < 0 || x >= Width || y < 0 || y >= Height)
                 return;
             _tiles[x, y] = new Tile(type);
+        }
+
+        public string GetMapDebugInfo()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine("=== GAME MAP DEBUG INFO ===");
+            sb.AppendLine($"Map size: {Width}x{Height}");
+            sb.AppendLine();
+            
+            // Check center area (10-14, 10-14)
+            sb.AppendLine("=== CENTER AREA CHECK (10-14, 10-14) ===");
+            for (int y = 10; y <= 14; y++)
+            {
+                for (int x = 10; x <= 14; x++)
+                {
+                    var tile = GetTile(x, y);
+                    bool isWalkable = IsWalkable(new Vector2(x, y));
+                    sb.AppendLine($"Position ({x},{y}): {tile?.Type} - Walkable: {isWalkable}");
+                }
+            }
+            
+            // Check all obstacles
+            sb.AppendLine();
+            sb.AppendLine("=== ALL OBSTACLES ===");
+            for (int y = 0; y < Height; y++)
+            {
+                for (int x = 0; x < Width; x++)
+                {
+                    var tile = GetTile(x, y);
+                    if (tile?.Type == TileType.Wall)
+                    {
+                        sb.AppendLine($"Wall at ({x},{y})");
+                    }
+                }
+            }
+            
+            return sb.ToString();
         }
     }
 } 

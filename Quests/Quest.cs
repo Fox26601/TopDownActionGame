@@ -63,6 +63,21 @@ namespace IsometricActionGame.Quests
                 OnQuestTurnedIn?.Invoke(this);
             }
         }
+        
+        /// <summary>
+        /// Reset quest after turning in to allow taking it again
+        /// </summary>
+        public virtual void ResetAfterTurnIn()
+        {
+            if (IsTurnedIn)
+            {
+                IsTurnedIn = false;
+                IsCompleted = false;
+                IsActive = false;
+                IsRefused = false;
+                System.Diagnostics.Debug.WriteLine($"Quest: {Title} reset after turn in - can be taken again");
+            }
+        }
 
         public virtual void Reset()
         {

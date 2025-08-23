@@ -43,23 +43,42 @@ namespace IsometricActionGame
         
         public void Heal(int amount)
         {
-            if (!IsAlive) return;
-            
-            int oldHealth = CurrentHealth;
-            CurrentHealth = Math.Min(MaxHealth, CurrentHealth + amount);
-            int actualHeal = CurrentHealth - oldHealth;
-            
-            if (actualHeal > 0)
+            try
             {
-                OnHeal?.Invoke(this, actualHeal);
-                OnHealthChanged?.Invoke(this);
+                System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: Called with amount={amount}, current health={CurrentHealth}/{MaxHealth}");
+                
+                if (!IsAlive) 
+                {
+                    System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: Not alive, cannot heal");
+                    return;
+                }
+                
+                int oldHealth = CurrentHealth;
+                CurrentHealth = Math.Min(MaxHealth, CurrentHealth + amount);
+                int actualHeal = CurrentHealth - oldHealth;
+                
+                System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: oldHealth={oldHealth}, newHealth={CurrentHealth}, actualHeal={actualHeal}");
+                
+                if (actualHeal > 0)
+                {
+                    OnHeal?.Invoke(this, actualHeal);
+                    OnHealthChanged?.Invoke(this);
+                    System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: Events invoked");
+                }
+                else
+                {
+                    System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: No actual healing occurred");
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: Exception occurred: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"HealthSystem.Heal: Stack trace: {ex.StackTrace}");
             }
         }
         
         public void RestoreFullHealth()
         {
-            if (!IsAlive) return;
-            
             int oldHealth = CurrentHealth;
             CurrentHealth = MaxHealth;
             int actualHeal = CurrentHealth - oldHealth;

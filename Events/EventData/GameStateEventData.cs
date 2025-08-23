@@ -88,3 +88,6 @@ namespace IsometricActionGame.Events.EventData
 }
 
 
+
+
+

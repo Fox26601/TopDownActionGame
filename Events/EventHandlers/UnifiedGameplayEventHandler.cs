@@ -63,12 +63,16 @@ namespace IsometricActionGame.Events.EventHandlers
             _eventSystem.Subscribe<ItemUsedEventData>(GameEvents.ITEM_USED, OnItemUsed);
             _eventSystem.Subscribe<GoldChangedEventData>(GameEvents.GOLD_CHANGED, OnGoldChanged);
             _eventSystem.Subscribe<ItemDroppedEventData>(GameEvents.ITEM_DROPPED, OnItemDropped);
+            _eventSystem.Subscribe<HealthPotionAutoAssignedEventData>(GameEvents.HEALTH_POTION_AUTO_ASSIGNED, OnHealthPotionAutoAssigned);
             
             // Quest events
             _eventSystem.Subscribe<Quest>(GameEvents.QUEST_STARTED, OnQuestStarted);
             _eventSystem.Subscribe<Quest>(GameEvents.QUEST_COMPLETED, OnQuestCompleted);
             _eventSystem.Subscribe<Quest>(GameEvents.QUEST_TURNED_IN, OnQuestTurnedIn);
             _eventSystem.Subscribe<Quest>(GameEvents.QUEST_REFUSED, OnQuestRefused);
+            _eventSystem.Subscribe<Quest>(GameEvents.RETURN_QUEST_AUTO_ASSIGNED, OnReturnQuestAutoAssigned);
+            _eventSystem.Subscribe<Quest>(GameEvents.RETURN_QUEST_COMPLETED, OnReturnQuestCompleted);
+            _eventSystem.Subscribe<QuestEventArgs>(GameEvents.QUEST_REWARD_GRANTED, OnQuestRewardGranted);
             
             // Environment events
             _eventSystem.Subscribe<object>(GameEvents.CHEST_OPENED, OnChestOpened);
@@ -94,11 +98,15 @@ namespace IsometricActionGame.Events.EventHandlers
             _eventSystem.Unsubscribe<ItemUsedEventData>(GameEvents.ITEM_USED, OnItemUsed);
             _eventSystem.Unsubscribe<GoldChangedEventData>(GameEvents.GOLD_CHANGED, OnGoldChanged);
             _eventSystem.Unsubscribe<ItemDroppedEventData>(GameEvents.ITEM_DROPPED, OnItemDropped);
+            _eventSystem.Unsubscribe<HealthPotionAutoAssignedEventData>(GameEvents.HEALTH_POTION_AUTO_ASSIGNED, OnHealthPotionAutoAssigned);
             
             _eventSystem.Unsubscribe<Quest>(GameEvents.QUEST_STARTED, OnQuestStarted);
             _eventSystem.Unsubscribe<Quest>(GameEvents.QUEST_COMPLETED, OnQuestCompleted);
             _eventSystem.Unsubscribe<Quest>(GameEvents.QUEST_TURNED_IN, OnQuestTurnedIn);
             _eventSystem.Unsubscribe<Quest>(GameEvents.QUEST_REFUSED, OnQuestRefused);
+            _eventSystem.Unsubscribe<Quest>(GameEvents.RETURN_QUEST_AUTO_ASSIGNED, OnReturnQuestAutoAssigned);
+            _eventSystem.Unsubscribe<Quest>(GameEvents.RETURN_QUEST_COMPLETED, OnReturnQuestCompleted);
+            _eventSystem.Unsubscribe<QuestEventArgs>(GameEvents.QUEST_REWARD_GRANTED, OnQuestRewardGranted);
             
             _eventSystem.Unsubscribe<object>(GameEvents.CHEST_OPENED, OnChestOpened);
             
@@ -209,6 +217,12 @@ namespace IsometricActionGame.Events.EventHandlers
             _console?.AddMessage($"{data.Item.Name} dropped{source}!", Color.Orange);
         }
         
+        private void OnHealthPotionAutoAssigned(HealthPotionAutoAssignedEventData data)
+        {
+            var source = data.WasFromInventory ? "from inventory" : "from pickup";
+            _console?.AddMessage($"Health potion auto-assigned to slot {data.SlotIndex + 1} ({source})!", Color.LightGreen);
+        }
+        
         #endregion
         
         #region Quest Event Handlers
@@ -221,8 +235,7 @@ namespace IsometricActionGame.Events.EventHandlers
         private void OnQuestCompleted(Quest quest)
         {
             System.Diagnostics.Debug.WriteLine($"UnifiedGameplayEventHandler: Quest completed event received for quest: {quest?.Title}");
-            _console?.AddMessage($"Quest completed: {quest?.Title ?? "Unknown"}!", Color.LimeGreen);
-            _console?.AddMessage("Return to the Mayor to claim your reward!", Color.Gold);
+            _console?.AddMessage($"Quest completed: {quest?.Title ?? "Unknown"}! Return to the Mayor to claim your reward!", Color.LimeGreen);
         }
         
         private void OnQuestTurnedIn(Quest quest)
@@ -233,6 +246,45 @@ namespace IsometricActionGame.Events.EventHandlers
         private void OnQuestRefused(Quest quest)
         {
             _console?.AddMessage($"Quest refused: {quest?.Title ?? "Unknown"}!", Color.Red);
+        }
+        
+        private void OnReturnQuestAutoAssigned(Quest quest)
+        {
+            System.Diagnostics.Debug.WriteLine($"UnifiedGameplayEventHandler: Return quest auto-assigned for: {quest?.Title}");
+            _console?.AddMessage($"New quest assigned: Return to Mayor for reward!", Color.LightBlue);
+            _console?.AddMessage("Talk to the Mayor to claim your reward!", Color.Gold);
+        }
+        
+        private void OnReturnQuestCompleted(Quest quest)
+        {
+            System.Diagnostics.Debug.WriteLine($"UnifiedGameplayEventHandler: Return quest completed for: {quest?.Title}");
+            _console?.AddMessage($"Return quest completed: {quest?.Title ?? "Unknown"}!", Color.LimeGreen);
+        }
+        
+        private void OnQuestRewardGranted(QuestEventArgs eventData)
+        {
+            System.Diagnostics.Debug.WriteLine($"UnifiedGameplayEventHandler: Quest reward granted for: {eventData.Quest?.Title}, Gold: {eventData.GoldReward}");
+            
+            // Grant gold reward to player
+            if (_player?.Inventory != null && eventData.GoldReward > 0)
+            {
+                _player.Inventory.AddGold(eventData.GoldReward);
+                _console?.AddMessage($"Quest reward granted: {eventData.GoldReward} gold coins!", Color.Gold);
+            }
+            
+            // Show different messages based on quest type
+            if (eventData.HasPebbleObjective)
+            {
+                _console?.AddMessage("You completed the extended quest with Pebble objective!", Color.LimeGreen);
+            }
+            else if (eventData.QuestType == "SimpleKillBatsQuest")
+            {
+                _console?.AddMessage("You completed the repeat quest!", Color.LightBlue);
+            }
+            else
+            {
+                _console?.AddMessage("You completed the main quest!", Color.LimeGreen);
+            }
         }
         
         #endregion
@@ -314,17 +366,14 @@ namespace IsometricActionGame.Events.EventHandlers
                 _console?.AddMessage("Gold dropped!", Color.Yellow);
             }
             
-            // Drop health potion from Bat with 50% probability
+            // Drop health potion from Bat with 50% probability  
             if (enemyType == "Bat" && _random.NextDouble() < GameConstants.Probability.HEALTH_POTION_DROP_CHANCE)
             {
                 var potion = ItemFactory.CreateHealthPotion();
                 potion.LoadContent(_contentManager);
                 
-                var droppedPotion = new DroppedItem(position, potion, GameConstants.SpriteScale.HEALTH_POTION_SCALE);
-                droppedPotion.LoadContent(_contentManager);
-                
-                // Note: ITEM_DROPPED event is now handled by UnifiedEventSystem
-                // The dropped item should be added to the game world by the calling system
+                // Publish ITEM_DROPPED event to notify Game1 to add the dropped item to the world
+                UnifiedEventSystem.Instance?.PublishItemDropped(potion, position, "Bat");
                 
                 _console?.AddMessage("Health potion dropped on ground!", Color.Green);
             }

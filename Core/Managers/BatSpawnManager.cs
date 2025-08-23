@@ -105,28 +105,30 @@ namespace IsometricActionGame
         /// </summary>
         public bool ShouldSpawnBat()
         {
-            // Don't spawn if quest is completed
-            var extendedQuest = _questManager.GetExtendedKillBatsQuest();
-            if (extendedQuest.IsCompleted)
-            {
-                return false;
-            }
-            
             // Don't spawn if cooldown is still active
             if (_spawnCooldown > 0)
             {
                 return false;
             }
             
+            var extendedQuest = _questManager.GetExtendedKillBatsQuest();
+            var simpleQuest = _questManager.GetSimpleKillBatsQuest();
+            
+            // Don't spawn if both quests are completed
+            if (extendedQuest.IsCompleted && simpleQuest.IsCompleted)
+            {
+                return false;
+            }
+            
             int currentBats = GetActiveBatCount();
             
-            // If quest is active, limit to MAX_BATS_WITH_QUEST
-            if (extendedQuest.IsActive)
+            // If any quest is active, limit to MAX_BATS_WITH_QUEST
+            if (extendedQuest.IsActive || simpleQuest.IsActive)
             {
                 return currentBats < GameConstants.Spawn.MAX_BATS_WITH_QUEST;
             }
             
-            // If quest is not active, maintain minimum bat count
+            // If no quest is active, maintain minimum bat count
             return currentBats < GameConstants.Spawn.MIN_BATS_ALWAYS;
         }
         

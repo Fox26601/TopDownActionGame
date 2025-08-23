@@ -72,3 +72,1709 @@
 [2025-08-20 18:24:59.925] Game1.LoadContent: Setting level system references...
 [2025-08-20 18:24:59.925] Game1.LoadContent: Level system references set
 [2025-08-20 18:25:00.010] Game1.Initialize: Initialization completed successfully!
+[2025-08-20 23:22:07.830] Game1.Initialize: Starting initialization...
+[2025-08-20 23:22:08.022] Game1.Initialize: GameSettings loaded
+[2025-08-20 23:22:08.024] Game1.Initialize: ResolutionManager initialized
+[2025-08-20 23:22:08.026] Game1.Initialize: GameMap created
+[2025-08-20 23:22:08.039] Game1.Initialize: Player created
+[2025-08-20 23:22:08.040] Game1.Initialize: CameraManager created
+[2025-08-20 23:22:08.041] Game1.Initialize: UIManager created
+[2025-08-20 23:22:08.041] Game1.Initialize: Lists initialized
+[2025-08-20 23:22:08.042] Game1.Initialize: ConsoleDisplay created
+[2025-08-20 23:22:08.044] Game1.Initialize: QuestManager created
+[2025-08-20 23:22:08.048] Game1.Initialize: DialogueManager created
+[2025-08-20 23:22:08.050] Game1.Initialize: Mayor created
+[2025-08-20 23:22:08.054] Game1.Initialize: Vendor created
+[2025-08-20 23:22:08.055] Game1.Initialize: AttackSystem created
+[2025-08-20 23:22:08.129] Game1.Initialize: InputHandler created
+[2025-08-20 23:22:08.130] Game1.Initialize: BatSpawnManager created
+[2025-08-20 23:22:08.134] Game1.Initialize: GameRestartManager created
+[2025-08-20 23:22:08.137] Game1.Initialize: LevelSystem created
+[2025-08-20 23:22:08.148] Game1.Initialize: EventSystem initialized
+[2025-08-20 23:22:08.149] Game1.Initialize: RestartManager references set
+[2025-08-20 23:22:08.153] Game1.Initialize: Save system initialized
+[2025-08-20 23:22:08.153] Game1.Initialize: Creating door...
+[2025-08-20 23:22:08.155] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-20 23:22:08.164] Game1.Initialize: Player references set in NPCs
+[2025-08-20 23:22:08.165] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-20 23:22:08.166] Game1.Initialize: UIManager reference set
+[2025-08-20 23:22:08.166] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-20 23:22:08.167] Game1.Initialize: Save data set
+[2025-08-20 23:22:08.168] Game1.Initialize: Starting level 1...
+[2025-08-20 23:22:08.343] Game1.Initialize: Level 1 started
+[2025-08-20 23:22:08.378] Game1.Initialize: ProjectileManager initialized
+[2025-08-20 23:22:08.384] Game1.Initialize: Tile colors initialized
+[2025-08-20 23:22:08.385] Game1.Initialize: Pebble events subscribed
+[2025-08-20 23:22:08.386] Game1.Initialize: Calling base.Initialize()...
+[2025-08-20 23:22:08.799] Game1.LoadContent: Setting level system references...
+[2025-08-20 23:22:08.800] Game1.LoadContent: Level system references set
+[2025-08-20 23:22:09.081] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 12:31:16.075] Game1.Initialize: Starting initialization...
+[2025-08-21 12:31:16.279] Game1.Initialize: GameSettings loaded
+[2025-08-21 12:31:16.280] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 12:31:16.283] Game1.Initialize: GameMap created
+[2025-08-21 12:31:16.294] Game1.Initialize: Player created
+[2025-08-21 12:31:16.295] Game1.Initialize: CameraManager created
+[2025-08-21 12:31:16.296] Game1.Initialize: UIManager created
+[2025-08-21 12:31:16.297] Game1.Initialize: Lists initialized
+[2025-08-21 12:31:16.298] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 12:31:16.301] Game1.Initialize: QuestManager created
+[2025-08-21 12:31:16.305] Game1.Initialize: DialogueManager created
+[2025-08-21 12:31:16.307] Game1.Initialize: Mayor created
+[2025-08-21 12:31:16.312] Game1.Initialize: Vendor created
+[2025-08-21 12:31:16.314] Game1.Initialize: AttackSystem created
+[2025-08-21 12:31:16.396] Game1.Initialize: InputHandler created
+[2025-08-21 12:31:16.397] Game1.Initialize: BatSpawnManager created
+[2025-08-21 12:31:16.402] Game1.Initialize: GameRestartManager created
+[2025-08-21 12:31:16.410] Game1.Initialize: LevelSystem created
+[2025-08-21 12:31:16.456] Game1.Initialize: EventSystem initialized
+[2025-08-21 12:31:16.457] Game1.Initialize: RestartManager references set
+[2025-08-21 12:31:16.463] Game1.Initialize: Save system initialized
+[2025-08-21 12:31:16.463] Game1.Initialize: Creating door...
+[2025-08-21 12:31:16.465] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 12:31:16.475] Game1.Initialize: Player references set in NPCs
+[2025-08-21 12:31:16.478] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 12:31:16.479] Game1.Initialize: UIManager reference set
+[2025-08-21 12:31:16.480] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 12:31:16.480] Game1.Initialize: Save data set
+[2025-08-21 12:31:16.481] Game1.Initialize: Starting level 1...
+[2025-08-21 12:31:16.659] Game1.Initialize: Level 1 started
+[2025-08-21 12:31:16.706] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 12:31:16.712] Game1.Initialize: Tile colors initialized
+[2025-08-21 12:31:16.713] Game1.Initialize: Pebble events subscribed
+[2025-08-21 12:31:16.714] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 12:31:17.191] Game1.LoadContent: Setting level system references...
+[2025-08-21 12:31:17.192] Game1.LoadContent: Level system references set
+[2025-08-21 12:31:17.360] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 14:50:47.935] Game1.Initialize: Starting initialization...
+[2025-08-21 14:50:48.124] Game1.Initialize: GameSettings loaded
+[2025-08-21 14:50:48.126] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 14:50:48.127] Game1.Initialize: GameMap created
+[2025-08-21 14:50:48.137] Game1.Initialize: Player created
+[2025-08-21 14:50:48.137] Game1.Initialize: CameraManager created
+[2025-08-21 14:50:48.138] Game1.Initialize: UIManager created
+[2025-08-21 14:50:48.139] Game1.Initialize: Lists initialized
+[2025-08-21 14:50:48.140] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 14:50:48.142] Game1.Initialize: QuestManager created
+[2025-08-21 14:50:48.146] Game1.Initialize: DialogueManager created
+[2025-08-21 14:50:48.148] Game1.Initialize: Mayor created
+[2025-08-21 14:50:48.155] Game1.Initialize: Vendor created
+[2025-08-21 14:50:48.156] Game1.Initialize: AttackSystem created
+[2025-08-21 14:50:48.225] Game1.Initialize: InputHandler created
+[2025-08-21 14:50:48.226] Game1.Initialize: BatSpawnManager created
+[2025-08-21 14:50:48.230] Game1.Initialize: GameRestartManager created
+[2025-08-21 14:50:48.233] Game1.Initialize: LevelSystem created
+[2025-08-21 14:50:48.244] Game1.Initialize: EventSystem initialized
+[2025-08-21 14:50:48.245] Game1.Initialize: RestartManager references set
+[2025-08-21 14:50:48.248] Game1.Initialize: Save system initialized
+[2025-08-21 14:50:48.248] Game1.Initialize: Creating door...
+[2025-08-21 14:50:48.250] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 14:50:48.256] Game1.Initialize: Player references set in NPCs
+[2025-08-21 14:50:48.257] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 14:50:48.258] Game1.Initialize: UIManager reference set
+[2025-08-21 14:50:48.258] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 14:50:48.259] Game1.Initialize: Save data set
+[2025-08-21 14:50:48.260] Game1.Initialize: Starting level 1...
+[2025-08-21 14:50:48.336] Game1.Initialize: Level 1 started
+[2025-08-21 14:50:48.340] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 14:50:48.346] Game1.Initialize: Tile colors initialized
+[2025-08-21 14:50:48.348] Game1.Initialize: Pebble events subscribed
+[2025-08-21 14:50:48.348] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 14:50:48.566] Game1.LoadContent: Setting level system references...
+[2025-08-21 14:50:48.567] Game1.LoadContent: Level system references set
+[2025-08-21 14:50:48.728] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 14:51:25.951] Game1.Initialize: Starting initialization...
+[2025-08-21 14:51:26.135] Game1.Initialize: GameSettings loaded
+[2025-08-21 14:51:26.136] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 14:51:26.138] Game1.Initialize: GameMap created
+[2025-08-21 14:51:26.148] Game1.Initialize: Player created
+[2025-08-21 14:51:26.149] Game1.Initialize: CameraManager created
+[2025-08-21 14:51:26.150] Game1.Initialize: UIManager created
+[2025-08-21 14:51:26.151] Game1.Initialize: Lists initialized
+[2025-08-21 14:51:26.152] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 14:51:26.155] Game1.Initialize: QuestManager created
+[2025-08-21 14:51:26.158] Game1.Initialize: DialogueManager created
+[2025-08-21 14:51:26.160] Game1.Initialize: Mayor created
+[2025-08-21 14:51:26.165] Game1.Initialize: Vendor created
+[2025-08-21 14:51:26.166] Game1.Initialize: AttackSystem created
+[2025-08-21 14:51:26.229] Game1.Initialize: InputHandler created
+[2025-08-21 14:51:26.230] Game1.Initialize: BatSpawnManager created
+[2025-08-21 14:51:26.234] Game1.Initialize: GameRestartManager created
+[2025-08-21 14:51:26.238] Game1.Initialize: LevelSystem created
+[2025-08-21 14:51:26.249] Game1.Initialize: EventSystem initialized
+[2025-08-21 14:51:26.250] Game1.Initialize: RestartManager references set
+[2025-08-21 14:51:26.253] Game1.Initialize: Save system initialized
+[2025-08-21 14:51:26.253] Game1.Initialize: Creating door...
+[2025-08-21 14:51:26.254] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 14:51:26.263] Game1.Initialize: Player references set in NPCs
+[2025-08-21 14:51:26.264] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 14:51:26.264] Game1.Initialize: UIManager reference set
+[2025-08-21 14:51:26.265] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 14:51:26.266] Game1.Initialize: Save data set
+[2025-08-21 14:51:26.266] Game1.Initialize: Starting level 1...
+[2025-08-21 14:51:26.350] Game1.Initialize: Level 1 started
+[2025-08-21 14:51:26.361] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 14:51:26.369] Game1.Initialize: Tile colors initialized
+[2025-08-21 14:51:26.372] Game1.Initialize: Pebble events subscribed
+[2025-08-21 14:51:26.372] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 14:51:26.679] Game1.LoadContent: Setting level system references...
+[2025-08-21 14:51:26.679] Game1.LoadContent: Level system references set
+[2025-08-21 14:51:26.824] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 15:43:18.362] Game1.Initialize: Starting initialization...
+[2025-08-21 15:43:18.520] Game1.Initialize: GameSettings loaded
+[2025-08-21 15:43:18.521] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 15:43:18.522] Game1.Initialize: GameMap created
+[2025-08-21 15:43:18.531] Game1.Initialize: Player created
+[2025-08-21 15:43:18.532] Game1.Initialize: CameraManager created
+[2025-08-21 15:43:18.532] Game1.Initialize: UIManager created
+[2025-08-21 15:43:18.533] Game1.Initialize: Lists initialized
+[2025-08-21 15:43:18.534] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 15:43:18.536] Game1.Initialize: QuestManager created
+[2025-08-21 15:43:18.536] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 15:43:18.539] Game1.Initialize: DialogueManager created
+[2025-08-21 15:43:18.541] Game1.Initialize: Mayor created
+[2025-08-21 15:43:18.545] Game1.Initialize: Vendor created
+[2025-08-21 15:43:18.546] Game1.Initialize: AttackSystem created
+[2025-08-21 15:43:18.598] Game1.Initialize: InputHandler created
+[2025-08-21 15:43:18.599] Game1.Initialize: BatSpawnManager created
+[2025-08-21 15:43:18.602] Game1.Initialize: GameRestartManager created
+[2025-08-21 15:43:18.606] Game1.Initialize: LevelSystem created
+[2025-08-21 15:43:18.619] Game1.Initialize: EventSystem initialized
+[2025-08-21 15:43:18.619] Game1.Initialize: RestartManager references set
+[2025-08-21 15:43:18.623] Game1.Initialize: Save system initialized
+[2025-08-21 15:43:18.623] Game1.Initialize: Creating door...
+[2025-08-21 15:43:18.625] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 15:43:18.631] Game1.Initialize: Player references set in NPCs
+[2025-08-21 15:43:18.632] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 15:43:18.633] Game1.Initialize: UIManager reference set
+[2025-08-21 15:43:18.633] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 15:43:18.634] Game1.Initialize: Save data set
+[2025-08-21 15:43:18.634] Game1.Initialize: Starting level 1...
+[2025-08-21 15:43:18.705] Game1.Initialize: Level 1 started
+[2025-08-21 15:43:18.711] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 15:43:18.716] Game1.Initialize: Tile colors initialized
+[2025-08-21 15:43:18.717] Game1.Initialize: Pebble events subscribed
+[2025-08-21 15:43:18.718] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 15:43:18.943] Game1.LoadContent: Setting level system references...
+[2025-08-21 15:43:18.944] Game1.LoadContent: Level system references set
+[2025-08-21 15:43:19.078] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 15:50:24.028] Game1.Initialize: Starting initialization...
+[2025-08-21 15:50:24.163] Game1.Initialize: GameSettings loaded
+[2025-08-21 15:50:24.166] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 15:50:24.168] Game1.Initialize: GameMap created
+[2025-08-21 15:50:24.180] Game1.Initialize: Player created
+[2025-08-21 15:50:24.181] Game1.Initialize: CameraManager created
+[2025-08-21 15:50:24.182] Game1.Initialize: UIManager created
+[2025-08-21 15:50:24.182] Game1.Initialize: Lists initialized
+[2025-08-21 15:50:24.184] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 15:50:24.186] Game1.Initialize: QuestManager created
+[2025-08-21 15:50:24.186] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 15:50:24.191] Game1.Initialize: DialogueManager created
+[2025-08-21 15:50:24.192] Game1.Initialize: Mayor created
+[2025-08-21 15:50:24.197] Game1.Initialize: Vendor created
+[2025-08-21 15:50:24.199] Game1.Initialize: AttackSystem created
+[2025-08-21 15:50:24.288] Game1.Initialize: InputHandler created
+[2025-08-21 15:50:24.289] Game1.Initialize: BatSpawnManager created
+[2025-08-21 15:50:24.296] Game1.Initialize: GameRestartManager created
+[2025-08-21 15:50:24.302] Game1.Initialize: LevelSystem created
+[2025-08-21 15:50:24.320] Game1.Initialize: EventSystem initialized
+[2025-08-21 15:50:24.321] Game1.Initialize: RestartManager references set
+[2025-08-21 15:50:24.326] Game1.Initialize: Save system initialized
+[2025-08-21 15:50:24.326] Game1.Initialize: Creating door...
+[2025-08-21 15:50:24.328] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 15:50:24.335] Game1.Initialize: Player references set in NPCs
+[2025-08-21 15:50:24.336] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 15:50:24.337] Game1.Initialize: UIManager reference set
+[2025-08-21 15:50:24.338] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 15:50:24.339] Game1.Initialize: Save data set
+[2025-08-21 15:50:24.340] Game1.Initialize: Starting level 1...
+[2025-08-21 15:50:24.408] Game1.Initialize: Level 1 started
+[2025-08-21 15:50:24.412] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 15:50:24.417] Game1.Initialize: Tile colors initialized
+[2025-08-21 15:50:24.418] Game1.Initialize: Pebble events subscribed
+[2025-08-21 15:50:24.419] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 15:50:24.641] Game1.LoadContent: Setting level system references...
+[2025-08-21 15:50:24.642] Game1.LoadContent: Level system references set
+[2025-08-21 15:50:24.753] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 15:54:23.656] Game1.Initialize: Starting initialization...
+[2025-08-21 15:54:23.765] Game1.Initialize: GameSettings loaded
+[2025-08-21 15:54:23.766] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 15:54:23.767] Game1.Initialize: GameMap created
+[2025-08-21 15:54:23.774] Game1.Initialize: Player created
+[2025-08-21 15:54:23.775] Game1.Initialize: CameraManager created
+[2025-08-21 15:54:23.775] Game1.Initialize: UIManager created
+[2025-08-21 15:54:23.776] Game1.Initialize: Lists initialized
+[2025-08-21 15:54:23.777] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 15:54:23.778] Game1.Initialize: QuestManager created
+[2025-08-21 15:54:23.778] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 15:54:23.781] Game1.Initialize: DialogueManager created
+[2025-08-21 15:54:23.782] Game1.Initialize: Mayor created
+[2025-08-21 15:54:23.786] Game1.Initialize: Vendor created
+[2025-08-21 15:54:23.786] Game1.Initialize: AttackSystem created
+[2025-08-21 15:54:23.830] Game1.Initialize: InputHandler created
+[2025-08-21 15:54:23.830] Game1.Initialize: BatSpawnManager created
+[2025-08-21 15:54:23.833] Game1.Initialize: GameRestartManager created
+[2025-08-21 15:54:23.837] Game1.Initialize: LevelSystem created
+[2025-08-21 15:54:23.846] Game1.Initialize: EventSystem initialized
+[2025-08-21 15:54:23.847] Game1.Initialize: RestartManager references set
+[2025-08-21 15:54:23.850] Game1.Initialize: Save system initialized
+[2025-08-21 15:54:23.850] Game1.Initialize: Creating door...
+[2025-08-21 15:54:23.851] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 15:54:23.856] Game1.Initialize: Player references set in NPCs
+[2025-08-21 15:54:23.857] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 15:54:23.858] Game1.Initialize: UIManager reference set
+[2025-08-21 15:54:23.858] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 15:54:23.858] Game1.Initialize: Save data set
+[2025-08-21 15:54:23.859] Game1.Initialize: Starting level 1...
+[2025-08-21 15:54:23.912] Game1.Initialize: Level 1 started
+[2025-08-21 15:54:23.916] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 15:54:23.920] Game1.Initialize: Tile colors initialized
+[2025-08-21 15:54:23.921] Game1.Initialize: Pebble events subscribed
+[2025-08-21 15:54:23.921] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 15:54:24.140] Game1.LoadContent: Setting level system references...
+[2025-08-21 15:54:24.141] Game1.LoadContent: Level system references set
+[2025-08-21 15:54:24.265] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 16:02:50.937] Game1.Initialize: Starting initialization...
+[2025-08-21 16:02:51.333] Game1.Initialize: GameSettings loaded
+[2025-08-21 16:02:51.336] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 16:02:51.339] Game1.Initialize: GameMap created
+[2025-08-21 16:02:51.367] Game1.Initialize: Player created
+[2025-08-21 16:02:51.422] Game1.Initialize: CameraManager created
+[2025-08-21 16:02:51.428] Game1.Initialize: UIManager created
+[2025-08-21 16:02:51.445] Game1.Initialize: Lists initialized
+[2025-08-21 16:02:51.452] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 16:02:51.457] Game1.Initialize: QuestManager created
+[2025-08-21 16:02:51.457] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 16:02:51.504] Game1.Initialize: DialogueManager created
+[2025-08-21 16:02:51.513] Game1.Initialize: Mayor created
+[2025-08-21 16:02:51.528] Game1.Initialize: Vendor created
+[2025-08-21 16:02:51.531] Game1.Initialize: AttackSystem created
+[2025-08-21 16:02:51.714] Game1.Initialize: InputHandler created
+[2025-08-21 16:02:51.716] Game1.Initialize: BatSpawnManager created
+[2025-08-21 16:02:51.723] Game1.Initialize: GameRestartManager created
+[2025-08-21 16:02:51.745] Game1.Initialize: LevelSystem created
+[2025-08-21 16:02:51.775] Game1.Initialize: EventSystem initialized
+[2025-08-21 16:02:51.776] Game1.Initialize: RestartManager references set
+[2025-08-21 16:02:51.784] Game1.Initialize: Save system initialized
+[2025-08-21 16:02:51.785] Game1.Initialize: Creating door...
+[2025-08-21 16:02:51.790] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 16:02:51.809] Game1.Initialize: Player references set in NPCs
+[2025-08-21 16:02:51.811] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 16:02:51.813] Game1.Initialize: UIManager reference set
+[2025-08-21 16:02:51.816] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 16:02:51.818] Game1.Initialize: Save data set
+[2025-08-21 16:02:51.820] Game1.Initialize: Starting level 1...
+[2025-08-21 16:02:51.964] Game1.Initialize: Level 1 started
+[2025-08-21 16:02:51.973] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 16:02:51.983] Game1.Initialize: Tile colors initialized
+[2025-08-21 16:02:51.986] Game1.Initialize: Pebble events subscribed
+[2025-08-21 16:02:51.987] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 16:02:52.393] Game1.LoadContent: Setting level system references...
+[2025-08-21 16:02:52.394] Game1.LoadContent: Level system references set
+[2025-08-21 16:02:52.563] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 16:19:06.736] Game1.Initialize: Starting initialization...
+[2025-08-21 16:19:06.863] Game1.Initialize: GameSettings loaded
+[2025-08-21 16:19:06.864] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 16:19:06.865] Game1.Initialize: GameMap created
+[2025-08-21 16:19:06.872] Game1.Initialize: Player created
+[2025-08-21 16:19:06.872] Game1.Initialize: CameraManager created
+[2025-08-21 16:19:06.873] Game1.Initialize: UIManager created
+[2025-08-21 16:19:06.873] Game1.Initialize: Lists initialized
+[2025-08-21 16:19:06.874] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 16:19:06.876] Game1.Initialize: QuestManager created
+[2025-08-21 16:19:06.877] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 16:19:06.880] Game1.Initialize: DialogueManager created
+[2025-08-21 16:19:06.881] Game1.Initialize: Mayor created
+[2025-08-21 16:19:06.885] Game1.Initialize: Vendor created
+[2025-08-21 16:19:06.885] Game1.Initialize: AttackSystem created
+[2025-08-21 16:19:06.931] Game1.Initialize: InputHandler created
+[2025-08-21 16:19:06.932] Game1.Initialize: BatSpawnManager created
+[2025-08-21 16:19:06.935] Game1.Initialize: GameRestartManager created
+[2025-08-21 16:19:06.937] Game1.Initialize: LevelSystem created
+[2025-08-21 16:19:06.946] Game1.Initialize: EventSystem initialized
+[2025-08-21 16:19:06.947] Game1.Initialize: RestartManager references set
+[2025-08-21 16:19:06.949] Game1.Initialize: Save system initialized
+[2025-08-21 16:19:06.949] Game1.Initialize: Creating door...
+[2025-08-21 16:19:06.950] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 16:19:06.955] Game1.Initialize: Player references set in NPCs
+[2025-08-21 16:19:06.956] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 16:19:06.956] Game1.Initialize: UIManager reference set
+[2025-08-21 16:19:06.957] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 16:19:06.957] Game1.Initialize: Save data set
+[2025-08-21 16:19:06.958] Game1.Initialize: Starting level 1...
+[2025-08-21 16:19:07.061] Game1.Initialize: Level 1 started
+[2025-08-21 16:19:07.086] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 16:19:07.090] Game1.Initialize: Tile colors initialized
+[2025-08-21 16:19:07.091] Game1.Initialize: Pebble events subscribed
+[2025-08-21 16:19:07.091] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 16:19:07.333] Game1.LoadContent: Setting level system references...
+[2025-08-21 16:19:07.333] Game1.LoadContent: Level system references set
+[2025-08-21 16:19:07.507] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 18:04:11.392] Game1.Initialize: Starting initialization...
+[2025-08-21 18:04:11.541] Game1.Initialize: GameSettings loaded
+[2025-08-21 18:04:11.542] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 18:04:11.544] Game1.Initialize: GameMap created
+[2025-08-21 18:04:11.552] Game1.Initialize: Player created
+[2025-08-21 18:04:11.553] Game1.Initialize: CameraManager created
+[2025-08-21 18:04:11.553] Game1.Initialize: UIManager created
+[2025-08-21 18:04:11.554] Game1.Initialize: Lists initialized
+[2025-08-21 18:04:11.555] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 18:04:11.557] Game1.Initialize: QuestManager created
+[2025-08-21 18:04:11.558] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 18:04:11.562] Game1.Initialize: DialogueManager created
+[2025-08-21 18:04:11.563] Game1.Initialize: Mayor created
+[2025-08-21 18:04:11.568] Game1.Initialize: Vendor created
+[2025-08-21 18:04:11.569] Game1.Initialize: AttackSystem created
+[2025-08-21 18:04:11.617] Game1.Initialize: InputHandler created
+[2025-08-21 18:04:11.618] Game1.Initialize: BatSpawnManager created
+[2025-08-21 18:04:11.621] Game1.Initialize: GameRestartManager created
+[2025-08-21 18:04:11.623] Game1.Initialize: LevelSystem created
+[2025-08-21 18:04:11.633] Game1.Initialize: EventSystem initialized
+[2025-08-21 18:04:11.633] Game1.Initialize: RestartManager references set
+[2025-08-21 18:04:11.636] Game1.Initialize: Save system initialized
+[2025-08-21 18:04:11.636] Game1.Initialize: Creating door...
+[2025-08-21 18:04:11.637] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 18:04:11.643] Game1.Initialize: Player references set in NPCs
+[2025-08-21 18:04:11.644] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 18:04:11.644] Game1.Initialize: UIManager reference set
+[2025-08-21 18:04:11.644] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 18:04:11.645] Game1.Initialize: Save data set
+[2025-08-21 18:04:11.645] Game1.Initialize: Starting level 1...
+[2025-08-21 18:04:11.758] Game1.Initialize: Level 1 started
+[2025-08-21 18:04:11.790] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 18:04:11.796] Game1.Initialize: Tile colors initialized
+[2025-08-21 18:04:11.797] Game1.Initialize: Pebble events subscribed
+[2025-08-21 18:04:11.798] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 18:04:12.116] Game1.LoadContent: Setting level system references...
+[2025-08-21 18:04:12.117] Game1.LoadContent: Level system references set
+[2025-08-21 18:04:12.261] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 20:18:11.961] Game1.Initialize: Starting initialization...
+[2025-08-21 20:18:12.156] Game1.Initialize: GameSettings loaded
+[2025-08-21 20:18:12.158] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 20:18:12.160] Game1.Initialize: GameMap created
+[2025-08-21 20:18:12.171] Game1.Initialize: Player created
+[2025-08-21 20:18:12.172] Game1.Initialize: CameraManager created
+[2025-08-21 20:18:12.172] Game1.Initialize: UIManager created
+[2025-08-21 20:18:12.173] Game1.Initialize: Lists initialized
+[2025-08-21 20:18:12.174] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 20:18:12.178] Game1.Initialize: QuestManager created
+[2025-08-21 20:18:12.178] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 20:18:12.183] Game1.Initialize: DialogueManager created
+[2025-08-21 20:18:12.185] Game1.Initialize: Mayor created
+[2025-08-21 20:18:12.191] Game1.Initialize: Vendor created
+[2025-08-21 20:18:12.192] Game1.Initialize: AttackSystem created
+[2025-08-21 20:18:12.259] Game1.Initialize: InputHandler created
+[2025-08-21 20:18:12.260] Game1.Initialize: BatSpawnManager created
+[2025-08-21 20:18:12.265] Game1.Initialize: GameRestartManager created
+[2025-08-21 20:18:12.269] Game1.Initialize: LevelSystem created
+[2025-08-21 20:18:12.281] Game1.Initialize: EventSystem initialized
+[2025-08-21 20:18:12.282] Game1.Initialize: RestartManager references set
+[2025-08-21 20:18:12.287] Game1.Initialize: Save system initialized
+[2025-08-21 20:18:12.287] Game1.Initialize: Creating door...
+[2025-08-21 20:18:12.289] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 20:18:12.299] Game1.Initialize: Player references set in NPCs
+[2025-08-21 20:18:12.318] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 20:18:12.319] Game1.Initialize: UIManager reference set
+[2025-08-21 20:18:12.319] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 20:18:12.320] Game1.Initialize: Save data set
+[2025-08-21 20:18:12.321] Game1.Initialize: Starting level 1...
+[2025-08-21 20:18:12.411] Game1.Initialize: Level 1 started
+[2025-08-21 20:18:12.421] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 20:18:12.426] Game1.Initialize: Tile colors initialized
+[2025-08-21 20:18:12.428] Game1.Initialize: Pebble events subscribed
+[2025-08-21 20:18:12.428] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 20:18:12.792] Game1.LoadContent: Setting level system references...
+[2025-08-21 20:18:12.822] Game1.LoadContent: Level system references set
+[2025-08-21 20:18:12.976] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 20:24:41.716] Game1.Initialize: Starting initialization...
+[2025-08-21 20:24:41.903] Game1.Initialize: GameSettings loaded
+[2025-08-21 20:24:41.904] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 20:24:41.906] Game1.Initialize: GameMap created
+[2025-08-21 20:24:41.917] Game1.Initialize: Player created
+[2025-08-21 20:24:41.918] Game1.Initialize: CameraManager created
+[2025-08-21 20:24:41.919] Game1.Initialize: UIManager created
+[2025-08-21 20:24:41.919] Game1.Initialize: Lists initialized
+[2025-08-21 20:24:41.921] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 20:24:41.924] Game1.Initialize: QuestManager created
+[2025-08-21 20:24:41.924] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 20:24:41.929] Game1.Initialize: DialogueManager created
+[2025-08-21 20:24:41.931] Game1.Initialize: Mayor created
+[2025-08-21 20:24:41.938] Game1.Initialize: Vendor created
+[2025-08-21 20:24:41.939] Game1.Initialize: AttackSystem created
+[2025-08-21 20:24:42.010] Game1.Initialize: InputHandler created
+[2025-08-21 20:24:42.012] Game1.Initialize: BatSpawnManager created
+[2025-08-21 20:24:42.017] Game1.Initialize: GameRestartManager created
+[2025-08-21 20:24:42.024] Game1.Initialize: LevelSystem created
+[2025-08-21 20:24:42.042] Game1.Initialize: EventSystem initialized
+[2025-08-21 20:24:42.043] Game1.Initialize: RestartManager references set
+[2025-08-21 20:24:42.047] Game1.Initialize: Save system initialized
+[2025-08-21 20:24:42.048] Game1.Initialize: Creating door...
+[2025-08-21 20:24:42.050] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 20:24:42.060] Game1.Initialize: Player references set in NPCs
+[2025-08-21 20:24:42.061] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 20:24:42.062] Game1.Initialize: UIManager reference set
+[2025-08-21 20:24:42.063] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 20:24:42.063] Game1.Initialize: Save data set
+[2025-08-21 20:24:42.064] Game1.Initialize: Starting level 1...
+[2025-08-21 20:24:42.139] Game1.Initialize: Level 1 started
+[2025-08-21 20:24:42.143] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 20:24:42.149] Game1.Initialize: Tile colors initialized
+[2025-08-21 20:24:42.151] Game1.Initialize: Pebble events subscribed
+[2025-08-21 20:24:42.151] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 20:24:42.367] Game1.LoadContent: Setting level system references...
+[2025-08-21 20:24:42.368] Game1.LoadContent: Level system references set
+[2025-08-21 20:24:42.511] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 20:39:28.431] Game1.Initialize: Starting initialization...
+[2025-08-21 20:39:28.613] Game1.Initialize: GameSettings loaded
+[2025-08-21 20:39:28.614] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 20:39:28.616] Game1.Initialize: GameMap created
+[2025-08-21 20:39:28.629] Game1.Initialize: Player created
+[2025-08-21 20:39:28.630] Game1.Initialize: CameraManager created
+[2025-08-21 20:39:28.631] Game1.Initialize: UIManager created
+[2025-08-21 20:39:28.631] Game1.Initialize: Lists initialized
+[2025-08-21 20:39:28.632] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 20:39:28.635] Game1.Initialize: QuestManager created
+[2025-08-21 20:39:28.635] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 20:39:28.638] Game1.Initialize: DialogueManager created
+[2025-08-21 20:39:28.640] Game1.Initialize: Mayor created
+[2025-08-21 20:39:28.645] Game1.Initialize: Vendor created
+[2025-08-21 20:39:28.645] Game1.Initialize: AttackSystem created
+[2025-08-21 20:39:28.701] Game1.Initialize: InputHandler created
+[2025-08-21 20:39:28.702] Game1.Initialize: BatSpawnManager created
+[2025-08-21 20:39:28.706] Game1.Initialize: GameRestartManager created
+[2025-08-21 20:39:28.709] Game1.Initialize: LevelSystem created
+[2025-08-21 20:39:28.720] Game1.Initialize: EventSystem initialized
+[2025-08-21 20:39:28.720] Game1.Initialize: RestartManager references set
+[2025-08-21 20:39:28.724] Game1.Initialize: Save system initialized
+[2025-08-21 20:39:28.724] Game1.Initialize: Creating door...
+[2025-08-21 20:39:28.725] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 20:39:28.731] Game1.Initialize: Player references set in NPCs
+[2025-08-21 20:39:28.732] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 20:39:28.733] Game1.Initialize: UIManager reference set
+[2025-08-21 20:39:28.733] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 20:39:28.734] Game1.Initialize: Save data set
+[2025-08-21 20:39:28.735] Game1.Initialize: Starting level 1...
+[2025-08-21 20:39:28.799] Game1.Initialize: Level 1 started
+[2025-08-21 20:39:28.803] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 20:39:28.809] Game1.Initialize: Tile colors initialized
+[2025-08-21 20:39:28.810] Game1.Initialize: Pebble events subscribed
+[2025-08-21 20:39:28.811] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 20:39:29.016] Game1.LoadContent: Setting level system references...
+[2025-08-21 20:39:29.017] Game1.LoadContent: Level system references set
+[2025-08-21 20:39:29.148] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 20:49:14.771] Game1.Initialize: Starting initialization...
+[2025-08-21 20:49:14.961] Game1.Initialize: GameSettings loaded
+[2025-08-21 20:49:14.962] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 20:49:14.964] Game1.Initialize: GameMap created
+[2025-08-21 20:49:14.975] Game1.Initialize: Player created
+[2025-08-21 20:49:14.976] Game1.Initialize: CameraManager created
+[2025-08-21 20:49:14.976] Game1.Initialize: UIManager created
+[2025-08-21 20:49:14.977] Game1.Initialize: Lists initialized
+[2025-08-21 20:49:14.978] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 20:49:14.981] Game1.Initialize: QuestManager created
+[2025-08-21 20:49:14.981] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 20:49:14.985] Game1.Initialize: DialogueManager created
+[2025-08-21 20:49:14.987] Game1.Initialize: Mayor created
+[2025-08-21 20:49:14.991] Game1.Initialize: Vendor created
+[2025-08-21 20:49:14.992] Game1.Initialize: AttackSystem created
+[2025-08-21 20:49:15.054] Game1.Initialize: InputHandler created
+[2025-08-21 20:49:15.055] Game1.Initialize: BatSpawnManager created
+[2025-08-21 20:49:15.059] Game1.Initialize: GameRestartManager created
+[2025-08-21 20:49:15.063] Game1.Initialize: LevelSystem created
+[2025-08-21 20:49:15.074] Game1.Initialize: EventSystem initialized
+[2025-08-21 20:49:15.075] Game1.Initialize: RestartManager references set
+[2025-08-21 20:49:15.078] Game1.Initialize: Save system initialized
+[2025-08-21 20:49:15.079] Game1.Initialize: Creating door...
+[2025-08-21 20:49:15.080] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 20:49:15.087] Game1.Initialize: Player references set in NPCs
+[2025-08-21 20:49:15.088] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 20:49:15.088] Game1.Initialize: UIManager reference set
+[2025-08-21 20:49:15.089] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 20:49:15.089] Game1.Initialize: Save data set
+[2025-08-21 20:49:15.090] Game1.Initialize: Starting level 1...
+[2025-08-21 20:49:15.216] Game1.Initialize: Level 1 started
+[2025-08-21 20:49:15.250] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 20:49:15.256] Game1.Initialize: Tile colors initialized
+[2025-08-21 20:49:15.257] Game1.Initialize: Pebble events subscribed
+[2025-08-21 20:49:15.258] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 20:49:15.586] Game1.LoadContent: Setting level system references...
+[2025-08-21 20:49:15.587] Game1.LoadContent: Level system references set
+[2025-08-21 20:49:15.734] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 20:53:37.706] Game1.Initialize: Starting initialization...
+[2025-08-21 20:53:37.903] Game1.Initialize: GameSettings loaded
+[2025-08-21 20:53:37.905] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 20:53:37.907] Game1.Initialize: GameMap created
+[2025-08-21 20:53:37.918] Game1.Initialize: Player created
+[2025-08-21 20:53:37.919] Game1.Initialize: CameraManager created
+[2025-08-21 20:53:37.920] Game1.Initialize: UIManager created
+[2025-08-21 20:53:37.920] Game1.Initialize: Lists initialized
+[2025-08-21 20:53:37.921] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 20:53:37.923] Game1.Initialize: QuestManager created
+[2025-08-21 20:53:37.924] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 20:53:37.928] Game1.Initialize: DialogueManager created
+[2025-08-21 20:53:37.929] Game1.Initialize: Mayor created
+[2025-08-21 20:53:37.936] Game1.Initialize: Vendor created
+[2025-08-21 20:53:37.937] Game1.Initialize: AttackSystem created
+[2025-08-21 20:53:38.000] Game1.Initialize: InputHandler created
+[2025-08-21 20:53:38.001] Game1.Initialize: BatSpawnManager created
+[2025-08-21 20:53:38.006] Game1.Initialize: GameRestartManager created
+[2025-08-21 20:53:38.012] Game1.Initialize: LevelSystem created
+[2025-08-21 20:53:38.027] Game1.Initialize: EventSystem initialized
+[2025-08-21 20:53:38.027] Game1.Initialize: RestartManager references set
+[2025-08-21 20:53:38.032] Game1.Initialize: Save system initialized
+[2025-08-21 20:53:38.033] Game1.Initialize: Creating door...
+[2025-08-21 20:53:38.034] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 20:53:38.040] Game1.Initialize: Player references set in NPCs
+[2025-08-21 20:53:38.041] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 20:53:38.042] Game1.Initialize: UIManager reference set
+[2025-08-21 20:53:38.043] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 20:53:38.043] Game1.Initialize: Save data set
+[2025-08-21 20:53:38.044] Game1.Initialize: Starting level 1...
+[2025-08-21 20:53:38.114] Game1.Initialize: Level 1 started
+[2025-08-21 20:53:38.120] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 20:53:38.126] Game1.Initialize: Tile colors initialized
+[2025-08-21 20:53:38.127] Game1.Initialize: Pebble events subscribed
+[2025-08-21 20:53:38.128] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 20:53:38.350] Game1.LoadContent: Setting level system references...
+[2025-08-21 20:53:38.351] Game1.LoadContent: Level system references set
+[2025-08-21 20:53:38.494] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 20:56:23.402] Game1.Initialize: Starting initialization...
+[2025-08-21 20:56:23.744] Game1.Initialize: GameSettings loaded
+[2025-08-21 20:56:23.747] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 20:56:23.749] Game1.Initialize: GameMap created
+[2025-08-21 20:56:23.763] Game1.Initialize: Player created
+[2025-08-21 20:56:23.764] Game1.Initialize: CameraManager created
+[2025-08-21 20:56:23.765] Game1.Initialize: UIManager created
+[2025-08-21 20:56:23.766] Game1.Initialize: Lists initialized
+[2025-08-21 20:56:23.768] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 20:56:23.771] Game1.Initialize: QuestManager created
+[2025-08-21 20:56:23.771] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 20:56:23.775] Game1.Initialize: DialogueManager created
+[2025-08-21 20:56:23.777] Game1.Initialize: Mayor created
+[2025-08-21 20:56:23.783] Game1.Initialize: Vendor created
+[2025-08-21 20:56:23.784] Game1.Initialize: AttackSystem created
+[2025-08-21 20:56:23.901] Game1.Initialize: InputHandler created
+[2025-08-21 20:56:23.902] Game1.Initialize: BatSpawnManager created
+[2025-08-21 20:56:23.908] Game1.Initialize: GameRestartManager created
+[2025-08-21 20:56:23.915] Game1.Initialize: LevelSystem created
+[2025-08-21 20:56:23.935] Game1.Initialize: EventSystem initialized
+[2025-08-21 20:56:23.936] Game1.Initialize: RestartManager references set
+[2025-08-21 20:56:23.940] Game1.Initialize: Save system initialized
+[2025-08-21 20:56:23.941] Game1.Initialize: Creating door...
+[2025-08-21 20:56:23.943] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 20:56:23.952] Game1.Initialize: Player references set in NPCs
+[2025-08-21 20:56:23.954] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 20:56:23.954] Game1.Initialize: UIManager reference set
+[2025-08-21 20:56:23.955] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 20:56:23.956] Game1.Initialize: Save data set
+[2025-08-21 20:56:23.956] Game1.Initialize: Starting level 1...
+[2025-08-21 20:56:24.052] Game1.Initialize: Level 1 started
+[2025-08-21 20:56:24.058] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 20:56:24.066] Game1.Initialize: Tile colors initialized
+[2025-08-21 20:56:24.068] Game1.Initialize: Pebble events subscribed
+[2025-08-21 20:56:24.069] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 20:56:24.330] Game1.LoadContent: Setting level system references...
+[2025-08-21 20:56:24.331] Game1.LoadContent: Level system references set
+[2025-08-21 20:56:24.467] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 21:00:43.312] Game1.Initialize: Starting initialization...
+[2025-08-21 21:00:43.496] Game1.Initialize: GameSettings loaded
+[2025-08-21 21:00:43.498] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 21:00:43.500] Game1.Initialize: GameMap created
+[2025-08-21 21:00:43.512] Game1.Initialize: Player created
+[2025-08-21 21:00:43.512] Game1.Initialize: CameraManager created
+[2025-08-21 21:00:43.513] Game1.Initialize: UIManager created
+[2025-08-21 21:00:43.514] Game1.Initialize: Lists initialized
+[2025-08-21 21:00:43.515] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 21:00:43.518] Game1.Initialize: QuestManager created
+[2025-08-21 21:00:43.518] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 21:00:43.523] Game1.Initialize: DialogueManager created
+[2025-08-21 21:00:43.525] Game1.Initialize: Mayor created
+[2025-08-21 21:00:43.531] Game1.Initialize: Vendor created
+[2025-08-21 21:00:43.532] Game1.Initialize: AttackSystem created
+[2025-08-21 21:00:43.594] Game1.Initialize: InputHandler created
+[2025-08-21 21:00:43.595] Game1.Initialize: BatSpawnManager created
+[2025-08-21 21:00:43.600] Game1.Initialize: GameRestartManager created
+[2025-08-21 21:00:43.604] Game1.Initialize: LevelSystem created
+[2025-08-21 21:00:43.616] Game1.Initialize: EventSystem initialized
+[2025-08-21 21:00:43.616] Game1.Initialize: RestartManager references set
+[2025-08-21 21:00:43.620] Game1.Initialize: Save system initialized
+[2025-08-21 21:00:43.620] Game1.Initialize: Creating door...
+[2025-08-21 21:00:43.622] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 21:00:43.628] Game1.Initialize: Player references set in NPCs
+[2025-08-21 21:00:43.629] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 21:00:43.630] Game1.Initialize: UIManager reference set
+[2025-08-21 21:00:43.630] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 21:00:43.631] Game1.Initialize: Save data set
+[2025-08-21 21:00:43.631] Game1.Initialize: Starting level 1...
+[2025-08-21 21:00:43.696] Game1.Initialize: Level 1 started
+[2025-08-21 21:00:43.701] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 21:00:43.706] Game1.Initialize: Tile colors initialized
+[2025-08-21 21:00:43.708] Game1.Initialize: Pebble events subscribed
+[2025-08-21 21:00:43.708] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 21:00:43.910] Game1.LoadContent: Setting level system references...
+[2025-08-21 21:00:43.911] Game1.LoadContent: Level system references set
+[2025-08-21 21:00:44.044] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 21:59:54.138] Game1.Initialize: Starting initialization...
+[2025-08-21 21:59:54.353] Game1.Initialize: GameSettings loaded
+[2025-08-21 21:59:54.355] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 21:59:54.357] Game1.Initialize: GameMap created
+[2025-08-21 21:59:54.369] Game1.Initialize: Player created
+[2025-08-21 21:59:54.370] Game1.Initialize: CameraManager created
+[2025-08-21 21:59:54.371] Game1.Initialize: UIManager created
+[2025-08-21 21:59:54.371] Game1.Initialize: Lists initialized
+[2025-08-21 21:59:54.373] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 21:59:54.376] Game1.Initialize: QuestManager created
+[2025-08-21 21:59:54.376] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 21:59:54.380] Game1.Initialize: DialogueManager created
+[2025-08-21 21:59:54.381] Game1.Initialize: Mayor created
+[2025-08-21 21:59:54.386] Game1.Initialize: Vendor created
+[2025-08-21 21:59:54.387] Game1.Initialize: AttackSystem created
+[2025-08-21 21:59:54.449] Game1.Initialize: InputHandler created
+[2025-08-21 21:59:54.450] Game1.Initialize: BatSpawnManager created
+[2025-08-21 21:59:54.456] Game1.Initialize: GameRestartManager created
+[2025-08-21 21:59:54.462] Game1.Initialize: LevelSystem created
+[2025-08-21 21:59:54.475] Game1.Initialize: EventSystem initialized
+[2025-08-21 21:59:54.475] Game1.Initialize: RestartManager references set
+[2025-08-21 21:59:54.479] Game1.Initialize: Save system initialized
+[2025-08-21 21:59:54.479] Game1.Initialize: Creating door...
+[2025-08-21 21:59:54.480] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 21:59:54.488] Game1.Initialize: Player references set in NPCs
+[2025-08-21 21:59:54.489] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 21:59:54.489] Game1.Initialize: UIManager reference set
+[2025-08-21 21:59:54.490] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 21:59:54.491] Game1.Initialize: Save data set
+[2025-08-21 21:59:54.491] Game1.Initialize: Starting level 1...
+[2025-08-21 21:59:54.575] Game1.Initialize: Level 1 started
+[2025-08-21 21:59:54.583] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 21:59:54.589] Game1.Initialize: Tile colors initialized
+[2025-08-21 21:59:54.591] Game1.Initialize: Pebble events subscribed
+[2025-08-21 21:59:54.591] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 21:59:54.875] Game1.LoadContent: Setting level system references...
+[2025-08-21 21:59:54.876] Game1.LoadContent: Level system references set
+[2025-08-21 21:59:55.031] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 22:32:55.915] Game1.Initialize: Starting initialization...
+[2025-08-21 22:32:56.044] Game1.Initialize: GameSettings loaded
+[2025-08-21 22:32:56.046] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 22:32:56.048] Game1.Initialize: GameMap created
+[2025-08-21 22:32:56.062] Game1.Initialize: Player created
+[2025-08-21 22:32:56.062] Game1.Initialize: CameraManager created
+[2025-08-21 22:32:56.063] Game1.Initialize: UIManager created
+[2025-08-21 22:32:56.063] Game1.Initialize: Lists initialized
+[2025-08-21 22:32:56.064] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 22:32:56.066] Game1.Initialize: QuestManager created
+[2025-08-21 22:32:56.067] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 22:32:56.070] Game1.Initialize: DialogueManager created
+[2025-08-21 22:32:56.071] Game1.Initialize: Mayor created
+[2025-08-21 22:32:56.075] Game1.Initialize: Vendor created
+[2025-08-21 22:32:56.075] Game1.Initialize: AttackSystem created
+[2025-08-21 22:32:56.117] Game1.Initialize: InputHandler created
+[2025-08-21 22:32:56.118] Game1.Initialize: BatSpawnManager created
+[2025-08-21 22:32:56.122] Game1.Initialize: GameRestartManager created
+[2025-08-21 22:32:56.126] Game1.Initialize: LevelSystem created
+[2025-08-21 22:32:56.136] Game1.Initialize: EventSystem initialized
+[2025-08-21 22:32:56.137] Game1.Initialize: RestartManager references set
+[2025-08-21 22:32:56.139] Game1.Initialize: Save system initialized
+[2025-08-21 22:32:56.140] Game1.Initialize: Creating door...
+[2025-08-21 22:32:56.141] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 22:32:56.148] Game1.Initialize: Player references set in NPCs
+[2025-08-21 22:32:56.149] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 22:32:56.150] Game1.Initialize: UIManager reference set
+[2025-08-21 22:32:56.151] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 22:32:56.151] Game1.Initialize: Save data set
+[2025-08-21 22:32:56.152] Game1.Initialize: Starting level 1...
+[2025-08-21 22:32:56.232] Game1.Initialize: Level 1 started
+[2025-08-21 22:32:56.237] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 22:32:56.243] Game1.Initialize: Tile colors initialized
+[2025-08-21 22:32:56.244] Game1.Initialize: Pebble events subscribed
+[2025-08-21 22:32:56.245] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 22:32:56.433] Game1.LoadContent: Setting level system references...
+[2025-08-21 22:32:56.434] Game1.LoadContent: Level system references set
+[2025-08-21 22:32:56.629] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 22:39:15.116] Game1.Initialize: Starting initialization...
+[2025-08-21 22:39:15.275] Game1.Initialize: GameSettings loaded
+[2025-08-21 22:39:15.276] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 22:39:15.277] Game1.Initialize: GameMap created
+[2025-08-21 22:39:15.291] Game1.Initialize: Player created
+[2025-08-21 22:39:15.292] Game1.Initialize: CameraManager created
+[2025-08-21 22:39:15.292] Game1.Initialize: UIManager created
+[2025-08-21 22:39:15.293] Game1.Initialize: Lists initialized
+[2025-08-21 22:39:15.294] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 22:39:15.296] Game1.Initialize: QuestManager created
+[2025-08-21 22:39:15.297] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 22:39:15.300] Game1.Initialize: DialogueManager created
+[2025-08-21 22:39:15.301] Game1.Initialize: Mayor created
+[2025-08-21 22:39:15.306] Game1.Initialize: Vendor created
+[2025-08-21 22:39:15.306] Game1.Initialize: AttackSystem created
+[2025-08-21 22:39:15.364] Game1.Initialize: InputHandler created
+[2025-08-21 22:39:15.366] Game1.Initialize: BatSpawnManager created
+[2025-08-21 22:39:15.370] Game1.Initialize: GameRestartManager created
+[2025-08-21 22:39:15.373] Game1.Initialize: LevelSystem created
+[2025-08-21 22:39:15.383] Game1.Initialize: EventSystem initialized
+[2025-08-21 22:39:15.384] Game1.Initialize: RestartManager references set
+[2025-08-21 22:39:15.387] Game1.Initialize: Save system initialized
+[2025-08-21 22:39:15.388] Game1.Initialize: Creating door...
+[2025-08-21 22:39:15.390] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 22:39:15.401] Game1.Initialize: Player references set in NPCs
+[2025-08-21 22:39:15.402] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 22:39:15.403] Game1.Initialize: UIManager reference set
+[2025-08-21 22:39:15.404] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 22:39:15.405] Game1.Initialize: Save data set
+[2025-08-21 22:39:15.406] Game1.Initialize: Starting level 1...
+[2025-08-21 22:39:15.517] Game1.Initialize: Level 1 started
+[2025-08-21 22:39:15.525] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 22:39:15.533] Game1.Initialize: Tile colors initialized
+[2025-08-21 22:39:15.535] Game1.Initialize: Pebble events subscribed
+[2025-08-21 22:39:15.536] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 22:39:15.917] Game1.LoadContent: Setting level system references...
+[2025-08-21 22:39:15.919] Game1.LoadContent: Level system references set
+[2025-08-21 22:39:16.131] Game1.Initialize: Initialization completed successfully!
+[2025-08-21 22:44:46.097] Game1.Initialize: Starting initialization...
+[2025-08-21 22:44:46.211] Game1.Initialize: GameSettings loaded
+[2025-08-21 22:44:46.213] Game1.Initialize: ResolutionManager initialized
+[2025-08-21 22:44:46.214] Game1.Initialize: GameMap created
+[2025-08-21 22:44:46.225] Game1.Initialize: Player created
+[2025-08-21 22:44:46.225] Game1.Initialize: CameraManager created
+[2025-08-21 22:44:46.226] Game1.Initialize: UIManager created
+[2025-08-21 22:44:46.226] Game1.Initialize: Lists initialized
+[2025-08-21 22:44:46.227] Game1.Initialize: ConsoleDisplay created
+[2025-08-21 22:44:46.229] Game1.Initialize: QuestManager created
+[2025-08-21 22:44:46.230] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-21 22:44:46.232] Game1.Initialize: DialogueManager created
+[2025-08-21 22:44:46.234] Game1.Initialize: Mayor created
+[2025-08-21 22:44:46.237] Game1.Initialize: Vendor created
+[2025-08-21 22:44:46.238] Game1.Initialize: AttackSystem created
+[2025-08-21 22:44:46.278] Game1.Initialize: InputHandler created
+[2025-08-21 22:44:46.278] Game1.Initialize: BatSpawnManager created
+[2025-08-21 22:44:46.281] Game1.Initialize: GameRestartManager created
+[2025-08-21 22:44:46.283] Game1.Initialize: LevelSystem created
+[2025-08-21 22:44:46.289] Game1.Initialize: EventSystem initialized
+[2025-08-21 22:44:46.290] Game1.Initialize: RestartManager references set
+[2025-08-21 22:44:46.292] Game1.Initialize: Save system initialized
+[2025-08-21 22:44:46.292] Game1.Initialize: Creating door...
+[2025-08-21 22:44:46.293] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-21 22:44:46.297] Game1.Initialize: Player references set in NPCs
+[2025-08-21 22:44:46.298] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-21 22:44:46.298] Game1.Initialize: UIManager reference set
+[2025-08-21 22:44:46.299] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-21 22:44:46.299] Game1.Initialize: Save data set
+[2025-08-21 22:44:46.300] Game1.Initialize: Starting level 1...
+[2025-08-21 22:44:46.349] Game1.Initialize: Level 1 started
+[2025-08-21 22:44:46.352] Game1.Initialize: ProjectileManager initialized
+[2025-08-21 22:44:46.356] Game1.Initialize: Tile colors initialized
+[2025-08-21 22:44:46.357] Game1.Initialize: Pebble events subscribed
+[2025-08-21 22:44:46.358] Game1.Initialize: Calling base.Initialize()...
+[2025-08-21 22:44:46.516] Game1.LoadContent: Setting level system references...
+[2025-08-21 22:44:46.517] Game1.LoadContent: Level system references set
+[2025-08-21 22:44:46.598] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 10:18:31.877] Game1.Initialize: Starting initialization...
+[2025-08-22 10:18:32.129] Game1.Initialize: GameSettings loaded
+[2025-08-22 10:18:32.131] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 10:18:32.135] Game1.Initialize: GameMap created
+[2025-08-22 10:18:32.161] Game1.Initialize: Player created
+[2025-08-22 10:18:32.162] Game1.Initialize: CameraManager created
+[2025-08-22 10:18:32.163] Game1.Initialize: UIManager created
+[2025-08-22 10:18:32.164] Game1.Initialize: Lists initialized
+[2025-08-22 10:18:32.166] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 10:18:32.169] Game1.Initialize: QuestManager created
+[2025-08-22 10:18:32.170] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 10:18:32.175] Game1.Initialize: DialogueManager created
+[2025-08-22 10:18:32.178] Game1.Initialize: Mayor created
+[2025-08-22 10:18:32.183] Game1.Initialize: Vendor created
+[2025-08-22 10:18:32.185] Game1.Initialize: AttackSystem created
+[2025-08-22 10:18:32.276] Game1.Initialize: InputHandler created
+[2025-08-22 10:18:32.278] Game1.Initialize: BatSpawnManager created
+[2025-08-22 10:18:32.286] Game1.Initialize: GameRestartManager created
+[2025-08-22 10:18:32.292] Game1.Initialize: LevelSystem created
+[2025-08-22 10:18:32.309] Game1.Initialize: EventSystem initialized
+[2025-08-22 10:18:32.311] Game1.Initialize: RestartManager references set
+[2025-08-22 10:18:32.317] Game1.Initialize: Save system initialized
+[2025-08-22 10:18:32.318] Game1.Initialize: Creating door...
+[2025-08-22 10:18:32.320] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 10:18:32.332] Game1.Initialize: Player references set in NPCs
+[2025-08-22 10:18:32.333] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 10:18:32.334] Game1.Initialize: UIManager reference set
+[2025-08-22 10:18:32.335] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 10:18:32.336] Game1.Initialize: Save data set
+[2025-08-22 10:18:32.337] Game1.Initialize: Starting level 1...
+[2025-08-22 10:18:32.475] Game1.Initialize: Level 1 started
+[2025-08-22 10:18:32.485] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 10:18:32.498] Game1.Initialize: Tile colors initialized
+[2025-08-22 10:18:32.500] Game1.Initialize: Pebble events subscribed
+[2025-08-22 10:18:32.501] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 10:18:32.893] Game1.LoadContent: Setting level system references...
+[2025-08-22 10:18:32.894] Game1.LoadContent: Level system references set
+[2025-08-22 10:18:33.107] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 10:18:38.329] Game1.Initialize: Starting initialization...
+[2025-08-22 10:18:38.468] Game1.Initialize: GameSettings loaded
+[2025-08-22 10:18:38.469] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 10:18:38.471] Game1.Initialize: GameMap created
+[2025-08-22 10:18:38.487] Game1.Initialize: Player created
+[2025-08-22 10:18:38.488] Game1.Initialize: CameraManager created
+[2025-08-22 10:18:38.488] Game1.Initialize: UIManager created
+[2025-08-22 10:18:38.489] Game1.Initialize: Lists initialized
+[2025-08-22 10:18:38.490] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 10:18:38.492] Game1.Initialize: QuestManager created
+[2025-08-22 10:18:38.492] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 10:18:38.495] Game1.Initialize: DialogueManager created
+[2025-08-22 10:18:38.496] Game1.Initialize: Mayor created
+[2025-08-22 10:18:38.500] Game1.Initialize: Vendor created
+[2025-08-22 10:18:38.501] Game1.Initialize: AttackSystem created
+[2025-08-22 10:18:38.545] Game1.Initialize: InputHandler created
+[2025-08-22 10:18:38.546] Game1.Initialize: BatSpawnManager created
+[2025-08-22 10:18:38.549] Game1.Initialize: GameRestartManager created
+[2025-08-22 10:18:38.551] Game1.Initialize: LevelSystem created
+[2025-08-22 10:18:38.562] Game1.Initialize: EventSystem initialized
+[2025-08-22 10:18:38.563] Game1.Initialize: RestartManager references set
+[2025-08-22 10:18:38.566] Game1.Initialize: Save system initialized
+[2025-08-22 10:18:38.567] Game1.Initialize: Creating door...
+[2025-08-22 10:18:38.568] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 10:18:38.574] Game1.Initialize: Player references set in NPCs
+[2025-08-22 10:18:38.575] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 10:18:38.576] Game1.Initialize: UIManager reference set
+[2025-08-22 10:18:38.576] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 10:18:38.577] Game1.Initialize: Save data set
+[2025-08-22 10:18:38.577] Game1.Initialize: Starting level 1...
+[2025-08-22 10:18:38.656] Game1.Initialize: Level 1 started
+[2025-08-22 10:18:38.661] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 10:18:38.666] Game1.Initialize: Tile colors initialized
+[2025-08-22 10:18:38.667] Game1.Initialize: Pebble events subscribed
+[2025-08-22 10:18:38.668] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 10:18:38.877] Game1.LoadContent: Setting level system references...
+[2025-08-22 10:18:38.878] Game1.LoadContent: Level system references set
+[2025-08-22 10:18:38.973] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 11:28:24.046] Game1.Initialize: Starting initialization...
+[2025-08-22 11:28:24.224] Game1.Initialize: GameSettings loaded
+[2025-08-22 11:28:24.227] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 11:28:24.229] Game1.Initialize: GameMap created
+[2025-08-22 11:28:24.253] Game1.Initialize: Player created
+[2025-08-22 11:28:24.255] Game1.Initialize: CameraManager created
+[2025-08-22 11:28:24.256] Game1.Initialize: UIManager created
+[2025-08-22 11:28:24.257] Game1.Initialize: Lists initialized
+[2025-08-22 11:28:24.259] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 11:28:24.263] Game1.Initialize: QuestManager created
+[2025-08-22 11:28:24.264] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 11:28:24.269] Game1.Initialize: DialogueManager created
+[2025-08-22 11:28:24.271] Game1.Initialize: Mayor created
+[2025-08-22 11:28:24.279] Game1.Initialize: Vendor created
+[2025-08-22 11:28:24.279] Game1.Initialize: AttackSystem created
+[2025-08-22 11:28:24.338] Game1.Initialize: InputHandler created
+[2025-08-22 11:28:24.339] Game1.Initialize: BatSpawnManager created
+[2025-08-22 11:28:24.343] Game1.Initialize: GameRestartManager created
+[2025-08-22 11:28:24.347] Game1.Initialize: LevelSystem created
+[2025-08-22 11:28:24.360] Game1.Initialize: EventSystem initialized
+[2025-08-22 11:28:24.361] Game1.Initialize: RestartManager references set
+[2025-08-22 11:28:24.366] Game1.Initialize: Save system initialized
+[2025-08-22 11:28:24.367] Game1.Initialize: Creating door...
+[2025-08-22 11:28:24.369] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 11:28:24.379] Game1.Initialize: Player references set in NPCs
+[2025-08-22 11:28:24.380] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 11:28:24.381] Game1.Initialize: UIManager reference set
+[2025-08-22 11:28:24.381] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 11:28:24.382] Game1.Initialize: Save data set
+[2025-08-22 11:28:24.383] Game1.Initialize: Starting level 1...
+[2025-08-22 11:28:24.455] Game1.Initialize: Level 1 started
+[2025-08-22 11:28:24.463] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 11:28:24.469] Game1.Initialize: Tile colors initialized
+[2025-08-22 11:28:24.470] Game1.Initialize: Pebble events subscribed
+[2025-08-22 11:28:24.471] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 11:28:24.732] Game1.LoadContent: Setting level system references...
+[2025-08-22 11:28:24.733] Game1.LoadContent: Level system references set
+[2025-08-22 11:28:24.847] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 11:38:06.295] Game1.Initialize: Starting initialization...
+[2025-08-22 11:38:06.454] Game1.Initialize: GameSettings loaded
+[2025-08-22 11:38:06.456] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 11:38:06.457] Game1.Initialize: GameMap created
+[2025-08-22 11:38:06.470] Game1.Initialize: Player created
+[2025-08-22 11:38:06.471] Game1.Initialize: CameraManager created
+[2025-08-22 11:38:06.471] Game1.Initialize: UIManager created
+[2025-08-22 11:38:06.472] Game1.Initialize: Lists initialized
+[2025-08-22 11:38:06.472] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 11:38:06.474] Game1.Initialize: QuestManager created
+[2025-08-22 11:38:06.475] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 11:38:06.477] Game1.Initialize: DialogueManager created
+[2025-08-22 11:38:06.479] Game1.Initialize: Mayor created
+[2025-08-22 11:38:06.483] Game1.Initialize: Vendor created
+[2025-08-22 11:38:06.483] Game1.Initialize: AttackSystem created
+[2025-08-22 11:38:06.541] Game1.Initialize: InputHandler created
+[2025-08-22 11:38:06.542] Game1.Initialize: BatSpawnManager created
+[2025-08-22 11:38:06.547] Game1.Initialize: GameRestartManager created
+[2025-08-22 11:38:06.551] Game1.Initialize: LevelSystem created
+[2025-08-22 11:38:06.564] Game1.Initialize: EventSystem initialized
+[2025-08-22 11:38:06.564] Game1.Initialize: RestartManager references set
+[2025-08-22 11:38:06.568] Game1.Initialize: Save system initialized
+[2025-08-22 11:38:06.569] Game1.Initialize: Creating door...
+[2025-08-22 11:38:06.570] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 11:38:06.577] Game1.Initialize: Player references set in NPCs
+[2025-08-22 11:38:06.578] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 11:38:06.579] Game1.Initialize: UIManager reference set
+[2025-08-22 11:38:06.580] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 11:38:06.580] Game1.Initialize: Save data set
+[2025-08-22 11:38:06.581] Game1.Initialize: Starting level 1...
+[2025-08-22 11:38:06.655] Game1.Initialize: Level 1 started
+[2025-08-22 11:38:06.660] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 11:38:06.665] Game1.Initialize: Tile colors initialized
+[2025-08-22 11:38:06.666] Game1.Initialize: Pebble events subscribed
+[2025-08-22 11:38:06.667] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 11:38:06.895] Game1.LoadContent: Setting level system references...
+[2025-08-22 11:38:06.896] Game1.LoadContent: Level system references set
+[2025-08-22 11:38:07.053] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:00:07.906] Game1.Initialize: Starting initialization...
+[2025-08-22 12:00:08.093] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:00:08.095] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:00:08.098] Game1.Initialize: GameMap created
+[2025-08-22 12:00:08.118] Game1.Initialize: Player created
+[2025-08-22 12:00:08.119] Game1.Initialize: CameraManager created
+[2025-08-22 12:00:08.119] Game1.Initialize: UIManager created
+[2025-08-22 12:00:08.120] Game1.Initialize: Lists initialized
+[2025-08-22 12:00:08.121] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:00:08.123] Game1.Initialize: QuestManager created
+[2025-08-22 12:00:08.124] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:00:08.127] Game1.Initialize: DialogueManager created
+[2025-08-22 12:00:08.128] Game1.Initialize: Mayor created
+[2025-08-22 12:00:08.134] Game1.Initialize: Vendor created
+[2025-08-22 12:00:08.134] Game1.Initialize: AttackSystem created
+[2025-08-22 12:00:08.179] Game1.Initialize: InputHandler created
+[2025-08-22 12:00:08.179] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:00:08.182] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:00:08.185] Game1.Initialize: LevelSystem created
+[2025-08-22 12:00:08.192] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:00:08.193] Game1.Initialize: RestartManager references set
+[2025-08-22 12:00:08.195] Game1.Initialize: Save system initialized
+[2025-08-22 12:00:08.196] Game1.Initialize: Creating door...
+[2025-08-22 12:00:08.196] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:00:08.202] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:00:08.202] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:00:08.203] Game1.Initialize: UIManager reference set
+[2025-08-22 12:00:08.203] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:00:08.204] Game1.Initialize: Save data set
+[2025-08-22 12:00:08.204] Game1.Initialize: Starting level 1...
+[2025-08-22 12:00:08.281] Game1.Initialize: Level 1 started
+[2025-08-22 12:00:08.285] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:00:08.292] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:00:08.293] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:00:08.294] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:00:08.602] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:00:08.604] Game1.LoadContent: Level system references set
+[2025-08-22 12:00:08.795] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:17:02.106] Game1.Initialize: Starting initialization...
+[2025-08-22 12:17:02.233] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:17:02.234] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:17:02.236] Game1.Initialize: GameMap created
+[2025-08-22 12:17:02.255] Game1.Initialize: Player created
+[2025-08-22 12:17:02.256] Game1.Initialize: CameraManager created
+[2025-08-22 12:17:02.257] Game1.Initialize: UIManager created
+[2025-08-22 12:17:02.258] Game1.Initialize: Lists initialized
+[2025-08-22 12:17:02.259] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:17:02.263] Game1.Initialize: QuestManager created
+[2025-08-22 12:17:02.263] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:17:02.268] Game1.Initialize: DialogueManager created
+[2025-08-22 12:17:02.270] Game1.Initialize: Mayor created
+[2025-08-22 12:17:02.275] Game1.Initialize: Vendor created
+[2025-08-22 12:17:02.275] Game1.Initialize: AttackSystem created
+[2025-08-22 12:17:02.341] Game1.Initialize: InputHandler created
+[2025-08-22 12:17:02.342] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:17:02.345] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:17:02.349] Game1.Initialize: LevelSystem created
+[2025-08-22 12:17:02.359] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:17:02.360] Game1.Initialize: RestartManager references set
+[2025-08-22 12:17:02.363] Game1.Initialize: Save system initialized
+[2025-08-22 12:17:02.363] Game1.Initialize: Creating door...
+[2025-08-22 12:17:02.364] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:17:02.370] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:17:02.371] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:17:02.371] Game1.Initialize: UIManager reference set
+[2025-08-22 12:17:02.372] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:17:02.373] Game1.Initialize: Save data set
+[2025-08-22 12:17:02.373] Game1.Initialize: Starting level 1...
+[2025-08-22 12:17:02.445] Game1.Initialize: Level 1 started
+[2025-08-22 12:17:02.450] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:17:02.455] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:17:02.456] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:17:02.457] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:17:02.692] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:17:02.693] Game1.LoadContent: Level system references set
+[2025-08-22 12:17:02.881] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:24:30.602] Game1.Initialize: Starting initialization...
+[2025-08-22 12:24:30.761] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:24:30.763] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:24:30.765] Game1.Initialize: GameMap created
+[2025-08-22 12:24:30.790] Game1.Initialize: Player created
+[2025-08-22 12:24:30.791] Game1.Initialize: CameraManager created
+[2025-08-22 12:24:30.792] Game1.Initialize: UIManager created
+[2025-08-22 12:24:30.792] Game1.Initialize: Lists initialized
+[2025-08-22 12:24:30.794] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:24:30.798] Game1.Initialize: QuestManager created
+[2025-08-22 12:24:30.798] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:24:30.804] Game1.Initialize: DialogueManager created
+[2025-08-22 12:24:30.807] Game1.Initialize: Mayor created
+[2025-08-22 12:24:30.814] Game1.Initialize: Vendor created
+[2025-08-22 12:24:30.814] Game1.Initialize: AttackSystem created
+[2025-08-22 12:24:30.879] Game1.Initialize: InputHandler created
+[2025-08-22 12:24:30.881] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:24:30.886] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:24:30.892] Game1.Initialize: LevelSystem created
+[2025-08-22 12:24:30.903] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:24:30.904] Game1.Initialize: RestartManager references set
+[2025-08-22 12:24:30.907] Game1.Initialize: Save system initialized
+[2025-08-22 12:24:30.907] Game1.Initialize: Creating door...
+[2025-08-22 12:24:30.908] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:24:30.915] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:24:30.917] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:24:30.917] Game1.Initialize: UIManager reference set
+[2025-08-22 12:24:30.918] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:24:30.919] Game1.Initialize: Save data set
+[2025-08-22 12:24:30.919] Game1.Initialize: Starting level 1...
+[2025-08-22 12:24:31.002] Game1.Initialize: Level 1 started
+[2025-08-22 12:24:31.007] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:24:31.013] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:24:31.015] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:24:31.015] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:24:31.224] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:24:31.225] Game1.LoadContent: Level system references set
+[2025-08-22 12:24:31.358] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:31:41.067] Game1.Initialize: Starting initialization...
+[2025-08-22 12:31:41.233] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:31:41.235] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:31:41.236] Game1.Initialize: GameMap created
+[2025-08-22 12:31:41.260] Game1.Initialize: Player created
+[2025-08-22 12:31:41.261] Game1.Initialize: CameraManager created
+[2025-08-22 12:31:41.262] Game1.Initialize: UIManager created
+[2025-08-22 12:31:41.262] Game1.Initialize: Lists initialized
+[2025-08-22 12:31:41.264] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:31:41.267] Game1.Initialize: QuestManager created
+[2025-08-22 12:31:41.268] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:31:41.272] Game1.Initialize: DialogueManager created
+[2025-08-22 12:31:41.274] Game1.Initialize: Mayor created
+[2025-08-22 12:31:41.279] Game1.Initialize: Vendor created
+[2025-08-22 12:31:41.280] Game1.Initialize: AttackSystem created
+[2025-08-22 12:31:41.340] Game1.Initialize: InputHandler created
+[2025-08-22 12:31:41.341] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:31:41.346] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:31:41.350] Game1.Initialize: LevelSystem created
+[2025-08-22 12:31:41.363] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:31:41.364] Game1.Initialize: RestartManager references set
+[2025-08-22 12:31:41.367] Game1.Initialize: Save system initialized
+[2025-08-22 12:31:41.368] Game1.Initialize: Creating door...
+[2025-08-22 12:31:41.369] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:31:41.379] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:31:41.380] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:31:41.381] Game1.Initialize: UIManager reference set
+[2025-08-22 12:31:41.381] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:31:41.382] Game1.Initialize: Save data set
+[2025-08-22 12:31:41.383] Game1.Initialize: Starting level 1...
+[2025-08-22 12:31:41.509] Game1.Initialize: Level 1 started
+[2025-08-22 12:31:41.545] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:31:41.552] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:31:41.554] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:31:41.554] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:31:41.881] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:31:41.882] Game1.LoadContent: Level system references set
+[2025-08-22 12:31:42.020] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:34:19.976] Game1.Initialize: Starting initialization...
+[2025-08-22 12:34:20.336] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:34:20.339] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:34:20.342] Game1.Initialize: GameMap created
+[2025-08-22 12:34:20.371] Game1.Initialize: Player created
+[2025-08-22 12:34:20.372] Game1.Initialize: CameraManager created
+[2025-08-22 12:34:20.374] Game1.Initialize: UIManager created
+[2025-08-22 12:34:20.374] Game1.Initialize: Lists initialized
+[2025-08-22 12:34:20.376] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:34:20.382] Game1.Initialize: QuestManager created
+[2025-08-22 12:34:20.382] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:34:20.388] Game1.Initialize: DialogueManager created
+[2025-08-22 12:34:20.391] Game1.Initialize: Mayor created
+[2025-08-22 12:34:20.401] Game1.Initialize: Vendor created
+[2025-08-22 12:34:20.403] Game1.Initialize: AttackSystem created
+[2025-08-22 12:34:20.499] Game1.Initialize: InputHandler created
+[2025-08-22 12:34:20.501] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:34:20.508] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:34:20.515] Game1.Initialize: LevelSystem created
+[2025-08-22 12:34:20.533] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:34:20.534] Game1.Initialize: RestartManager references set
+[2025-08-22 12:34:20.539] Game1.Initialize: Save system initialized
+[2025-08-22 12:34:20.540] Game1.Initialize: Creating door...
+[2025-08-22 12:34:20.543] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:34:20.555] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:34:20.557] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:34:20.558] Game1.Initialize: UIManager reference set
+[2025-08-22 12:34:20.558] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:34:20.560] Game1.Initialize: Save data set
+[2025-08-22 12:34:20.561] Game1.Initialize: Starting level 1...
+[2025-08-22 12:34:20.681] Game1.Initialize: Level 1 started
+[2025-08-22 12:34:20.689] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:34:20.697] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:34:20.700] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:34:20.701] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:34:20.987] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:34:20.988] Game1.LoadContent: Level system references set
+[2025-08-22 12:34:21.141] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:41:19.255] Game1.Initialize: Starting initialization...
+[2025-08-22 12:41:19.416] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:41:19.418] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:41:19.420] Game1.Initialize: GameMap created
+[2025-08-22 12:41:19.439] Game1.Initialize: Player created
+[2025-08-22 12:41:19.440] Game1.Initialize: CameraManager created
+[2025-08-22 12:41:19.441] Game1.Initialize: UIManager created
+[2025-08-22 12:41:19.442] Game1.Initialize: Lists initialized
+[2025-08-22 12:41:19.443] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:41:19.446] Game1.Initialize: QuestManager created
+[2025-08-22 12:41:19.447] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:41:19.452] Game1.Initialize: DialogueManager created
+[2025-08-22 12:41:19.455] Game1.Initialize: Mayor created
+[2025-08-22 12:41:19.461] Game1.Initialize: Vendor created
+[2025-08-22 12:41:19.462] Game1.Initialize: AttackSystem created
+[2025-08-22 12:41:19.512] Game1.Initialize: InputHandler created
+[2025-08-22 12:41:19.513] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:41:19.516] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:41:19.520] Game1.Initialize: LevelSystem created
+[2025-08-22 12:41:19.529] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:41:19.530] Game1.Initialize: RestartManager references set
+[2025-08-22 12:41:19.534] Game1.Initialize: Save system initialized
+[2025-08-22 12:41:19.535] Game1.Initialize: Creating door...
+[2025-08-22 12:41:19.537] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:41:19.547] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:41:19.548] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:41:19.549] Game1.Initialize: UIManager reference set
+[2025-08-22 12:41:19.550] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:41:19.550] Game1.Initialize: Save data set
+[2025-08-22 12:41:19.551] Game1.Initialize: Starting level 1...
+[2025-08-22 12:41:19.623] Game1.Initialize: Level 1 started
+[2025-08-22 12:41:19.627] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:41:19.631] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:41:19.632] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:41:19.633] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:41:19.847] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:41:19.848] Game1.LoadContent: Level system references set
+[2025-08-22 12:41:19.944] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 12:55:39.022] Game1.Initialize: Starting initialization...
+[2025-08-22 12:55:39.189] Game1.Initialize: GameSettings loaded
+[2025-08-22 12:55:39.191] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 12:55:39.193] Game1.Initialize: GameMap created
+[2025-08-22 12:55:39.212] Game1.Initialize: Player created
+[2025-08-22 12:55:39.213] Game1.Initialize: CameraManager created
+[2025-08-22 12:55:39.214] Game1.Initialize: UIManager created
+[2025-08-22 12:55:39.214] Game1.Initialize: Lists initialized
+[2025-08-22 12:55:39.216] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 12:55:39.219] Game1.Initialize: QuestManager created
+[2025-08-22 12:55:39.219] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 12:55:39.224] Game1.Initialize: DialogueManager created
+[2025-08-22 12:55:39.226] Game1.Initialize: Mayor created
+[2025-08-22 12:55:39.232] Game1.Initialize: Vendor created
+[2025-08-22 12:55:39.233] Game1.Initialize: AttackSystem created
+[2025-08-22 12:55:39.299] Game1.Initialize: InputHandler created
+[2025-08-22 12:55:39.300] Game1.Initialize: BatSpawnManager created
+[2025-08-22 12:55:39.305] Game1.Initialize: GameRestartManager created
+[2025-08-22 12:55:39.309] Game1.Initialize: LevelSystem created
+[2025-08-22 12:55:39.321] Game1.Initialize: EventSystem initialized
+[2025-08-22 12:55:39.322] Game1.Initialize: RestartManager references set
+[2025-08-22 12:55:39.326] Game1.Initialize: Save system initialized
+[2025-08-22 12:55:39.327] Game1.Initialize: Creating door...
+[2025-08-22 12:55:39.329] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 12:55:39.337] Game1.Initialize: Player references set in NPCs
+[2025-08-22 12:55:39.338] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 12:55:39.339] Game1.Initialize: UIManager reference set
+[2025-08-22 12:55:39.339] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 12:55:39.340] Game1.Initialize: Save data set
+[2025-08-22 12:55:39.341] Game1.Initialize: Starting level 1...
+[2025-08-22 12:55:39.419] Game1.Initialize: Level 1 started
+[2025-08-22 12:55:39.424] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 12:55:39.431] Game1.Initialize: Tile colors initialized
+[2025-08-22 12:55:39.432] Game1.Initialize: Pebble events subscribed
+[2025-08-22 12:55:39.433] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 12:55:39.645] Game1.LoadContent: Setting level system references...
+[2025-08-22 12:55:39.645] Game1.LoadContent: Level system references set
+[2025-08-22 12:55:39.752] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 13:03:05.590] Game1.Initialize: Starting initialization...
+[2025-08-22 13:03:05.743] Game1.Initialize: GameSettings loaded
+[2025-08-22 13:03:05.745] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 13:03:05.748] Game1.Initialize: GameMap created
+[2025-08-22 13:03:05.764] Game1.Initialize: Player created
+[2025-08-22 13:03:05.765] Game1.Initialize: CameraManager created
+[2025-08-22 13:03:05.766] Game1.Initialize: UIManager created
+[2025-08-22 13:03:05.766] Game1.Initialize: Lists initialized
+[2025-08-22 13:03:05.767] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 13:03:05.770] Game1.Initialize: QuestManager created
+[2025-08-22 13:03:05.770] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 13:03:05.774] Game1.Initialize: DialogueManager created
+[2025-08-22 13:03:05.775] Game1.Initialize: Mayor created
+[2025-08-22 13:03:05.780] Game1.Initialize: Vendor created
+[2025-08-22 13:03:05.781] Game1.Initialize: AttackSystem created
+[2025-08-22 13:03:05.844] Game1.Initialize: InputHandler created
+[2025-08-22 13:03:05.845] Game1.Initialize: BatSpawnManager created
+[2025-08-22 13:03:05.849] Game1.Initialize: GameRestartManager created
+[2025-08-22 13:03:05.854] Game1.Initialize: LevelSystem created
+[2025-08-22 13:03:05.867] Game1.Initialize: EventSystem initialized
+[2025-08-22 13:03:05.868] Game1.Initialize: RestartManager references set
+[2025-08-22 13:03:05.872] Game1.Initialize: Save system initialized
+[2025-08-22 13:03:05.873] Game1.Initialize: Creating door...
+[2025-08-22 13:03:05.874] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 13:03:05.880] Game1.Initialize: Player references set in NPCs
+[2025-08-22 13:03:05.881] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 13:03:05.882] Game1.Initialize: UIManager reference set
+[2025-08-22 13:03:05.883] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 13:03:05.884] Game1.Initialize: Save data set
+[2025-08-22 13:03:05.884] Game1.Initialize: Starting level 1...
+[2025-08-22 13:03:05.962] Game1.Initialize: Level 1 started
+[2025-08-22 13:03:05.966] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 13:03:05.973] Game1.Initialize: Tile colors initialized
+[2025-08-22 13:03:05.974] Game1.Initialize: Pebble events subscribed
+[2025-08-22 13:03:05.975] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 13:03:06.236] Game1.LoadContent: Setting level system references...
+[2025-08-22 13:03:06.237] Game1.LoadContent: Level system references set
+[2025-08-22 13:03:06.359] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 13:17:45.698] Game1.Initialize: Starting initialization...
+[2025-08-22 13:17:45.887] Game1.Initialize: GameSettings loaded
+[2025-08-22 13:17:45.888] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 13:17:45.890] Game1.Initialize: GameMap created
+[2025-08-22 13:17:45.907] Game1.Initialize: Player created
+[2025-08-22 13:17:45.907] Game1.Initialize: CameraManager created
+[2025-08-22 13:17:45.908] Game1.Initialize: UIManager created
+[2025-08-22 13:17:45.909] Game1.Initialize: Lists initialized
+[2025-08-22 13:17:45.910] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 13:17:45.913] Game1.Initialize: QuestManager created
+[2025-08-22 13:17:45.913] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 13:17:45.917] Game1.Initialize: DialogueManager created
+[2025-08-22 13:17:45.918] Game1.Initialize: Mayor created
+[2025-08-22 13:17:45.923] Game1.Initialize: Vendor created
+[2025-08-22 13:17:45.924] Game1.Initialize: AttackSystem created
+[2025-08-22 13:17:45.981] Game1.Initialize: InputHandler created
+[2025-08-22 13:17:45.982] Game1.Initialize: BatSpawnManager created
+[2025-08-22 13:17:45.986] Game1.Initialize: GameRestartManager created
+[2025-08-22 13:17:45.991] Game1.Initialize: LevelSystem created
+[2025-08-22 13:17:46.005] Game1.Initialize: EventSystem initialized
+[2025-08-22 13:17:46.006] Game1.Initialize: RestartManager references set
+[2025-08-22 13:17:46.010] Game1.Initialize: Save system initialized
+[2025-08-22 13:17:46.010] Game1.Initialize: Creating door...
+[2025-08-22 13:17:46.012] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 13:17:46.019] Game1.Initialize: Player references set in NPCs
+[2025-08-22 13:17:46.019] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 13:17:46.020] Game1.Initialize: UIManager reference set
+[2025-08-22 13:17:46.021] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 13:17:46.022] Game1.Initialize: Save data set
+[2025-08-22 13:17:46.022] Game1.Initialize: Starting level 1...
+[2025-08-22 13:17:46.102] Game1.Initialize: Level 1 started
+[2025-08-22 13:17:46.110] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 13:17:46.118] Game1.Initialize: Tile colors initialized
+[2025-08-22 13:17:46.120] Game1.Initialize: Pebble events subscribed
+[2025-08-22 13:17:46.121] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 13:17:46.454] Game1.LoadContent: Setting level system references...
+[2025-08-22 13:17:46.455] Game1.LoadContent: Level system references set
+[2025-08-22 13:17:46.606] Game1.Initialize: Initialization completed successfully!
+[2025-08-22 13:30:00.888] Game1.Initialize: Starting initialization...
+[2025-08-22 13:30:01.083] Game1.Initialize: GameSettings loaded
+[2025-08-22 13:30:01.085] Game1.Initialize: ResolutionManager initialized
+[2025-08-22 13:30:01.087] Game1.Initialize: GameMap created
+[2025-08-22 13:30:01.101] Game1.Initialize: Player created
+[2025-08-22 13:30:01.102] Game1.Initialize: CameraManager created
+[2025-08-22 13:30:01.103] Game1.Initialize: UIManager created
+[2025-08-22 13:30:01.103] Game1.Initialize: Lists initialized
+[2025-08-22 13:30:01.105] Game1.Initialize: ConsoleDisplay created
+[2025-08-22 13:30:01.107] Game1.Initialize: QuestManager created
+[2025-08-22 13:30:01.108] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-22 13:30:01.113] Game1.Initialize: DialogueManager created
+[2025-08-22 13:30:01.115] Game1.Initialize: Mayor created
+[2025-08-22 13:30:01.120] Game1.Initialize: Vendor created
+[2025-08-22 13:30:01.121] Game1.Initialize: AttackSystem created
+[2025-08-22 13:30:01.184] Game1.Initialize: InputHandler created
+[2025-08-22 13:30:01.185] Game1.Initialize: BatSpawnManager created
+[2025-08-22 13:30:01.189] Game1.Initialize: GameRestartManager created
+[2025-08-22 13:30:01.192] Game1.Initialize: LevelSystem created
+[2025-08-22 13:30:01.204] Game1.Initialize: EventSystem initialized
+[2025-08-22 13:30:01.205] Game1.Initialize: RestartManager references set
+[2025-08-22 13:30:01.208] Game1.Initialize: Save system initialized
+[2025-08-22 13:30:01.209] Game1.Initialize: Creating door...
+[2025-08-22 13:30:01.210] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-22 13:30:01.216] Game1.Initialize: Player references set in NPCs
+[2025-08-22 13:30:01.217] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-22 13:30:01.218] Game1.Initialize: UIManager reference set
+[2025-08-22 13:30:01.219] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-22 13:30:01.219] Game1.Initialize: Save data set
+[2025-08-22 13:30:01.220] Game1.Initialize: Starting level 1...
+[2025-08-22 13:30:01.309] Game1.Initialize: Level 1 started
+[2025-08-22 13:30:01.323] Game1.Initialize: ProjectileManager initialized
+[2025-08-22 13:30:01.329] Game1.Initialize: Tile colors initialized
+[2025-08-22 13:30:01.331] Game1.Initialize: Pebble events subscribed
+[2025-08-22 13:30:01.332] Game1.Initialize: Calling base.Initialize()...
+[2025-08-22 13:30:01.672] Game1.LoadContent: Setting level system references...
+[2025-08-22 13:30:01.674] Game1.LoadContent: Level system references set
+[2025-08-22 13:30:01.835] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 12:49:37.106] Game1.Initialize: Starting initialization...
+[2025-08-23 12:49:37.310] Game1.Initialize: GameSettings loaded
+[2025-08-23 12:49:37.311] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 12:49:37.313] Game1.Initialize: GameMap created
+[2025-08-23 12:49:37.328] Game1.Initialize: Player created
+[2025-08-23 12:49:37.328] Game1.Initialize: CameraManager created
+[2025-08-23 12:49:37.329] Game1.Initialize: UIManager created
+[2025-08-23 12:49:37.329] Game1.Initialize: Lists initialized
+[2025-08-23 12:49:37.331] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 12:49:37.334] Game1.Initialize: QuestManager created
+[2025-08-23 12:49:37.334] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 12:49:37.339] Game1.Initialize: DialogueManager created
+[2025-08-23 12:49:37.341] Game1.Initialize: Mayor created
+[2025-08-23 12:49:37.346] Game1.Initialize: Vendor created
+[2025-08-23 12:49:37.347] Game1.Initialize: AttackSystem created
+[2025-08-23 12:49:37.404] Game1.Initialize: InputHandler created
+[2025-08-23 12:49:37.405] Game1.Initialize: BatSpawnManager created
+[2025-08-23 12:49:37.409] Game1.Initialize: GameRestartManager created
+[2025-08-23 12:49:37.413] Game1.Initialize: LevelSystem created
+[2025-08-23 12:49:37.424] Game1.Initialize: EventSystem initialized
+[2025-08-23 12:49:37.424] Game1.Initialize: RestartManager references set
+[2025-08-23 12:49:37.428] Game1.Initialize: Save system initialized
+[2025-08-23 12:49:37.428] Game1.Initialize: Creating door...
+[2025-08-23 12:49:37.429] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 12:49:37.435] Game1.Initialize: Player references set in NPCs
+[2025-08-23 12:49:37.436] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 12:49:37.437] Game1.Initialize: UIManager reference set
+[2025-08-23 12:49:37.437] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 12:49:37.438] Game1.Initialize: Save data set
+[2025-08-23 12:49:37.438] Game1.Initialize: Starting level 1...
+[2025-08-23 12:49:37.589] Game1.Initialize: Level 1 started
+[2025-08-23 12:49:37.620] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 12:49:37.626] Game1.Initialize: Tile colors initialized
+[2025-08-23 12:49:37.628] Game1.Initialize: Pebble events subscribed
+[2025-08-23 12:49:37.628] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 12:49:37.987] Game1.LoadContent: Setting level system references...
+[2025-08-23 12:49:37.988] Game1.LoadContent: Level system references set
+[2025-08-23 12:49:38.245] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 13:03:42.744] Game1.Initialize: Starting initialization...
+[2025-08-23 13:03:42.951] Game1.Initialize: GameSettings loaded
+[2025-08-23 13:03:42.953] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 13:03:42.956] Game1.Initialize: GameMap created
+[2025-08-23 13:03:42.971] Game1.Initialize: Player created
+[2025-08-23 13:03:42.972] Game1.Initialize: CameraManager created
+[2025-08-23 13:03:42.973] Game1.Initialize: UIManager created
+[2025-08-23 13:03:42.973] Game1.Initialize: Lists initialized
+[2025-08-23 13:03:42.974] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 13:03:42.978] Game1.Initialize: QuestManager created
+[2025-08-23 13:03:42.978] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 13:03:42.982] Game1.Initialize: DialogueManager created
+[2025-08-23 13:03:42.984] Game1.Initialize: Mayor created
+[2025-08-23 13:03:42.989] Game1.Initialize: Vendor created
+[2025-08-23 13:03:42.990] Game1.Initialize: AttackSystem created
+[2025-08-23 13:03:43.052] Game1.Initialize: InputHandler created
+[2025-08-23 13:03:43.053] Game1.Initialize: BatSpawnManager created
+[2025-08-23 13:03:43.057] Game1.Initialize: GameRestartManager created
+[2025-08-23 13:03:43.061] Game1.Initialize: LevelSystem created
+[2025-08-23 13:03:43.073] Game1.Initialize: EventSystem initialized
+[2025-08-23 13:03:43.074] Game1.Initialize: RestartManager references set
+[2025-08-23 13:03:43.077] Game1.Initialize: Save system initialized
+[2025-08-23 13:03:43.077] Game1.Initialize: Creating door...
+[2025-08-23 13:03:43.078] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 13:03:43.085] Game1.Initialize: Player references set in NPCs
+[2025-08-23 13:03:43.086] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 13:03:43.086] Game1.Initialize: UIManager reference set
+[2025-08-23 13:03:43.087] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 13:03:43.087] Game1.Initialize: Save data set
+[2025-08-23 13:03:43.088] Game1.Initialize: Starting level 1...
+[2025-08-23 13:03:43.172] Game1.Initialize: Level 1 started
+[2025-08-23 13:03:43.178] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 13:03:43.184] Game1.Initialize: Tile colors initialized
+[2025-08-23 13:03:43.185] Game1.Initialize: Pebble events subscribed
+[2025-08-23 13:03:43.186] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 13:03:43.479] Game1.LoadContent: Setting level system references...
+[2025-08-23 13:03:43.480] Game1.LoadContent: Level system references set
+[2025-08-23 13:03:43.625] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 13:13:21.719] Game1.Initialize: Starting initialization...
+[2025-08-23 13:13:21.893] Game1.Initialize: GameSettings loaded
+[2025-08-23 13:13:21.895] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 13:13:21.897] Game1.Initialize: GameMap created
+[2025-08-23 13:13:21.910] Game1.Initialize: Player created
+[2025-08-23 13:13:21.911] Game1.Initialize: CameraManager created
+[2025-08-23 13:13:21.911] Game1.Initialize: UIManager created
+[2025-08-23 13:13:21.912] Game1.Initialize: Lists initialized
+[2025-08-23 13:13:21.913] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 13:13:21.916] Game1.Initialize: QuestManager created
+[2025-08-23 13:13:21.916] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 13:13:21.920] Game1.Initialize: DialogueManager created
+[2025-08-23 13:13:21.921] Game1.Initialize: Mayor created
+[2025-08-23 13:13:21.926] Game1.Initialize: Vendor created
+[2025-08-23 13:13:21.927] Game1.Initialize: AttackSystem created
+[2025-08-23 13:13:21.986] Game1.Initialize: InputHandler created
+[2025-08-23 13:13:21.987] Game1.Initialize: BatSpawnManager created
+[2025-08-23 13:13:21.991] Game1.Initialize: GameRestartManager created
+[2025-08-23 13:13:21.994] Game1.Initialize: LevelSystem created
+[2025-08-23 13:13:22.005] Game1.Initialize: EventSystem initialized
+[2025-08-23 13:13:22.006] Game1.Initialize: RestartManager references set
+[2025-08-23 13:13:22.009] Game1.Initialize: Save system initialized
+[2025-08-23 13:13:22.009] Game1.Initialize: Creating door...
+[2025-08-23 13:13:22.011] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 13:13:22.019] Game1.Initialize: Player references set in NPCs
+[2025-08-23 13:13:22.019] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 13:13:22.020] Game1.Initialize: UIManager reference set
+[2025-08-23 13:13:22.020] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 13:13:22.021] Game1.Initialize: Save data set
+[2025-08-23 13:13:22.021] Game1.Initialize: Starting level 1...
+[2025-08-23 13:13:22.098] Game1.Initialize: Level 1 started
+[2025-08-23 13:13:22.104] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 13:13:22.110] Game1.Initialize: Tile colors initialized
+[2025-08-23 13:13:22.111] Game1.Initialize: Pebble events subscribed
+[2025-08-23 13:13:22.112] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 13:13:22.370] Game1.LoadContent: Setting level system references...
+[2025-08-23 13:13:22.371] Game1.LoadContent: Level system references set
+[2025-08-23 13:13:22.503] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 13:18:09.133] Game1.Initialize: Starting initialization...
+[2025-08-23 13:18:09.332] Game1.Initialize: GameSettings loaded
+[2025-08-23 13:18:09.333] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 13:18:09.335] Game1.Initialize: GameMap created
+[2025-08-23 13:18:09.349] Game1.Initialize: Player created
+[2025-08-23 13:18:09.350] Game1.Initialize: CameraManager created
+[2025-08-23 13:18:09.351] Game1.Initialize: UIManager created
+[2025-08-23 13:18:09.351] Game1.Initialize: Lists initialized
+[2025-08-23 13:18:09.353] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 13:18:09.355] Game1.Initialize: QuestManager created
+[2025-08-23 13:18:09.355] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 13:18:09.359] Game1.Initialize: DialogueManager created
+[2025-08-23 13:18:09.361] Game1.Initialize: Mayor created
+[2025-08-23 13:18:09.366] Game1.Initialize: Vendor created
+[2025-08-23 13:18:09.367] Game1.Initialize: AttackSystem created
+[2025-08-23 13:18:09.437] Game1.Initialize: InputHandler created
+[2025-08-23 13:18:09.438] Game1.Initialize: BatSpawnManager created
+[2025-08-23 13:18:09.443] Game1.Initialize: GameRestartManager created
+[2025-08-23 13:18:09.446] Game1.Initialize: LevelSystem created
+[2025-08-23 13:18:09.463] Game1.Initialize: EventSystem initialized
+[2025-08-23 13:18:09.464] Game1.Initialize: RestartManager references set
+[2025-08-23 13:18:09.468] Game1.Initialize: Save system initialized
+[2025-08-23 13:18:09.469] Game1.Initialize: Creating door...
+[2025-08-23 13:18:09.470] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 13:18:09.478] Game1.Initialize: Player references set in NPCs
+[2025-08-23 13:18:09.479] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 13:18:09.480] Game1.Initialize: UIManager reference set
+[2025-08-23 13:18:09.480] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 13:18:09.481] Game1.Initialize: Save data set
+[2025-08-23 13:18:09.481] Game1.Initialize: Starting level 1...
+[2025-08-23 13:18:09.573] Game1.Initialize: Level 1 started
+[2025-08-23 13:18:09.579] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 13:18:09.584] Game1.Initialize: Tile colors initialized
+[2025-08-23 13:18:09.586] Game1.Initialize: Pebble events subscribed
+[2025-08-23 13:18:09.586] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 13:18:09.879] Game1.LoadContent: Setting level system references...
+[2025-08-23 13:18:09.880] Game1.LoadContent: Level system references set
+[2025-08-23 13:18:10.018] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 13:23:26.941] Game1.Initialize: Starting initialization...
+[2025-08-23 13:23:27.169] Game1.Initialize: GameSettings loaded
+[2025-08-23 13:23:27.171] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 13:23:27.173] Game1.Initialize: GameMap created
+[2025-08-23 13:23:27.187] Game1.Initialize: Player created
+[2025-08-23 13:23:27.188] Game1.Initialize: CameraManager created
+[2025-08-23 13:23:27.189] Game1.Initialize: UIManager created
+[2025-08-23 13:23:27.189] Game1.Initialize: Lists initialized
+[2025-08-23 13:23:27.190] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 13:23:27.193] Game1.Initialize: QuestManager created
+[2025-08-23 13:23:27.194] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 13:23:27.197] Game1.Initialize: DialogueManager created
+[2025-08-23 13:23:27.199] Game1.Initialize: Mayor created
+[2025-08-23 13:23:27.204] Game1.Initialize: Vendor created
+[2025-08-23 13:23:27.205] Game1.Initialize: AttackSystem created
+[2025-08-23 13:23:27.265] Game1.Initialize: InputHandler created
+[2025-08-23 13:23:27.266] Game1.Initialize: BatSpawnManager created
+[2025-08-23 13:23:27.270] Game1.Initialize: GameRestartManager created
+[2025-08-23 13:23:27.275] Game1.Initialize: LevelSystem created
+[2025-08-23 13:23:27.286] Game1.Initialize: EventSystem initialized
+[2025-08-23 13:23:27.287] Game1.Initialize: RestartManager references set
+[2025-08-23 13:23:27.290] Game1.Initialize: Save system initialized
+[2025-08-23 13:23:27.291] Game1.Initialize: Creating door...
+[2025-08-23 13:23:27.292] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 13:23:27.298] Game1.Initialize: Player references set in NPCs
+[2025-08-23 13:23:27.299] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 13:23:27.300] Game1.Initialize: UIManager reference set
+[2025-08-23 13:23:27.300] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 13:23:27.301] Game1.Initialize: Save data set
+[2025-08-23 13:23:27.301] Game1.Initialize: Starting level 1...
+[2025-08-23 13:23:27.381] Game1.Initialize: Level 1 started
+[2025-08-23 13:23:27.387] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 13:23:27.392] Game1.Initialize: Tile colors initialized
+[2025-08-23 13:23:27.394] Game1.Initialize: Pebble events subscribed
+[2025-08-23 13:23:27.394] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 13:23:27.661] Game1.LoadContent: Setting level system references...
+[2025-08-23 13:23:27.662] Game1.LoadContent: Level system references set
+[2025-08-23 13:23:27.800] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 13:47:13.893] Game1.Initialize: Starting initialization...
+[2025-08-23 13:47:14.078] Game1.Initialize: GameSettings loaded
+[2025-08-23 13:47:14.080] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 13:47:14.081] Game1.Initialize: GameMap created
+[2025-08-23 13:47:14.095] Game1.Initialize: Player created
+[2025-08-23 13:47:14.096] Game1.Initialize: CameraManager created
+[2025-08-23 13:47:14.097] Game1.Initialize: UIManager created
+[2025-08-23 13:47:14.098] Game1.Initialize: Lists initialized
+[2025-08-23 13:47:14.099] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 13:47:14.101] Game1.Initialize: QuestManager created
+[2025-08-23 13:47:14.102] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 13:47:14.105] Game1.Initialize: DialogueManager created
+[2025-08-23 13:47:14.107] Game1.Initialize: Mayor created
+[2025-08-23 13:47:14.112] Game1.Initialize: Vendor created
+[2025-08-23 13:47:14.113] Game1.Initialize: AttackSystem created
+[2025-08-23 13:47:14.174] Game1.Initialize: InputHandler created
+[2025-08-23 13:47:14.175] Game1.Initialize: BatSpawnManager created
+[2025-08-23 13:47:14.179] Game1.Initialize: GameRestartManager created
+[2025-08-23 13:47:14.183] Game1.Initialize: LevelSystem created
+[2025-08-23 13:47:14.196] Game1.Initialize: EventSystem initialized
+[2025-08-23 13:47:14.196] Game1.Initialize: RestartManager references set
+[2025-08-23 13:47:14.201] Game1.Initialize: Save system initialized
+[2025-08-23 13:47:14.201] Game1.Initialize: Creating door...
+[2025-08-23 13:47:14.202] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 13:47:14.209] Game1.Initialize: Player references set in NPCs
+[2025-08-23 13:47:14.210] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 13:47:14.210] Game1.Initialize: UIManager reference set
+[2025-08-23 13:47:14.211] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 13:47:14.211] Game1.Initialize: Save data set
+[2025-08-23 13:47:14.212] Game1.Initialize: Starting level 1...
+[2025-08-23 13:47:14.293] Game1.Initialize: Level 1 started
+[2025-08-23 13:47:14.299] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 13:47:14.305] Game1.Initialize: Tile colors initialized
+[2025-08-23 13:47:14.307] Game1.Initialize: Pebble events subscribed
+[2025-08-23 13:47:14.307] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 13:47:14.569] Game1.LoadContent: Setting level system references...
+[2025-08-23 13:47:14.570] Game1.LoadContent: Level system references set
+[2025-08-23 13:47:14.705] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 14:13:48.187] Game1.Initialize: Starting initialization...
+[2025-08-23 14:13:48.372] Game1.Initialize: GameSettings loaded
+[2025-08-23 14:13:48.374] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 14:13:48.376] Game1.Initialize: GameMap created
+[2025-08-23 14:13:48.390] Game1.Initialize: Player created
+[2025-08-23 14:13:48.391] Game1.Initialize: CameraManager created
+[2025-08-23 14:13:48.392] Game1.Initialize: UIManager created
+[2025-08-23 14:13:48.392] Game1.Initialize: Lists initialized
+[2025-08-23 14:13:48.393] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 14:13:48.396] Game1.Initialize: QuestManager created
+[2025-08-23 14:13:48.396] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 14:13:48.399] Game1.Initialize: DialogueManager created
+[2025-08-23 14:13:48.401] Game1.Initialize: Mayor created
+[2025-08-23 14:13:48.405] Game1.Initialize: Vendor created
+[2025-08-23 14:13:48.406] Game1.Initialize: AttackSystem created
+[2025-08-23 14:13:48.461] Game1.Initialize: InputHandler created
+[2025-08-23 14:13:48.462] Game1.Initialize: BatSpawnManager created
+[2025-08-23 14:13:48.466] Game1.Initialize: GameRestartManager created
+[2025-08-23 14:13:48.470] Game1.Initialize: LevelSystem created
+[2025-08-23 14:13:48.481] Game1.Initialize: EventSystem initialized
+[2025-08-23 14:13:48.482] Game1.Initialize: RestartManager references set
+[2025-08-23 14:13:48.485] Game1.Initialize: Save system initialized
+[2025-08-23 14:13:48.485] Game1.Initialize: Creating door...
+[2025-08-23 14:13:48.486] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 14:13:48.493] Game1.Initialize: Player references set in NPCs
+[2025-08-23 14:13:48.493] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 14:13:48.494] Game1.Initialize: UIManager reference set
+[2025-08-23 14:13:48.494] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 14:13:48.495] Game1.Initialize: Save data set
+[2025-08-23 14:13:48.495] Game1.Initialize: Starting level 1...
+[2025-08-23 14:13:48.570] Game1.Initialize: Level 1 started
+[2025-08-23 14:13:48.577] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 14:13:48.582] Game1.Initialize: Tile colors initialized
+[2025-08-23 14:13:48.583] Game1.Initialize: Pebble events subscribed
+[2025-08-23 14:13:48.584] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 14:13:48.839] Game1.LoadContent: Setting level system references...
+[2025-08-23 14:13:48.840] Game1.LoadContent: Level system references set
+[2025-08-23 14:13:48.989] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 14:52:13.234] Game1.Initialize: Starting initialization...
+[2025-08-23 14:52:13.435] Game1.Initialize: GameSettings loaded
+[2025-08-23 14:52:13.437] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 14:52:13.439] Game1.Initialize: GameMap created
+[2025-08-23 14:52:13.452] Game1.Initialize: Player created
+[2025-08-23 14:52:13.453] Game1.Initialize: CameraManager created
+[2025-08-23 14:52:13.454] Game1.Initialize: UIManager created
+[2025-08-23 14:52:13.454] Game1.Initialize: Lists initialized
+[2025-08-23 14:52:13.456] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 14:52:13.458] Game1.Initialize: QuestManager created
+[2025-08-23 14:52:13.459] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 14:52:13.462] Game1.Initialize: DialogueManager created
+[2025-08-23 14:52:13.464] Game1.Initialize: Mayor created
+[2025-08-23 14:52:13.468] Game1.Initialize: Vendor created
+[2025-08-23 14:52:13.469] Game1.Initialize: AttackSystem created
+[2025-08-23 14:52:13.544] Game1.Initialize: InputHandler created
+[2025-08-23 14:52:13.545] Game1.Initialize: BatSpawnManager created
+[2025-08-23 14:52:13.549] Game1.Initialize: GameRestartManager created
+[2025-08-23 14:52:13.552] Game1.Initialize: LevelSystem created
+[2025-08-23 14:52:13.565] Game1.Initialize: EventSystem initialized
+[2025-08-23 14:52:13.565] Game1.Initialize: RestartManager references set
+[2025-08-23 14:52:13.568] Game1.Initialize: Save system initialized
+[2025-08-23 14:52:13.569] Game1.Initialize: Creating door...
+[2025-08-23 14:52:13.570] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 14:52:13.576] Game1.Initialize: Player references set in NPCs
+[2025-08-23 14:52:13.577] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 14:52:13.578] Game1.Initialize: UIManager reference set
+[2025-08-23 14:52:13.578] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 14:52:13.579] Game1.Initialize: Save data set
+[2025-08-23 14:52:13.579] Game1.Initialize: Starting level 1...
+[2025-08-23 14:52:13.758] Game1.Initialize: Level 1 started
+[2025-08-23 14:52:13.810] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 14:52:13.819] Game1.Initialize: Tile colors initialized
+[2025-08-23 14:52:13.821] Game1.Initialize: Pebble events subscribed
+[2025-08-23 14:52:13.821] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 14:52:14.204] Game1.LoadContent: Setting level system references...
+[2025-08-23 14:52:14.204] Game1.LoadContent: Level system references set
+[2025-08-23 14:52:14.452] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 15:00:13.308] Game1.Initialize: Starting initialization...
+[2025-08-23 15:00:13.487] Game1.Initialize: GameSettings loaded
+[2025-08-23 15:00:13.489] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 15:00:13.490] Game1.Initialize: GameMap created
+[2025-08-23 15:00:13.505] Game1.Initialize: Player created
+[2025-08-23 15:00:13.506] Game1.Initialize: CameraManager created
+[2025-08-23 15:00:13.507] Game1.Initialize: UIManager created
+[2025-08-23 15:00:13.508] Game1.Initialize: Lists initialized
+[2025-08-23 15:00:13.509] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 15:00:13.513] Game1.Initialize: QuestManager created
+[2025-08-23 15:00:13.513] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 15:00:13.517] Game1.Initialize: DialogueManager created
+[2025-08-23 15:00:13.519] Game1.Initialize: Mayor created
+[2025-08-23 15:00:13.523] Game1.Initialize: Vendor created
+[2025-08-23 15:00:13.524] Game1.Initialize: AttackSystem created
+[2025-08-23 15:00:13.589] Game1.Initialize: InputHandler created
+[2025-08-23 15:00:13.590] Game1.Initialize: BatSpawnManager created
+[2025-08-23 15:00:13.594] Game1.Initialize: GameRestartManager created
+[2025-08-23 15:00:13.597] Game1.Initialize: LevelSystem created
+[2025-08-23 15:00:13.608] Game1.Initialize: EventSystem initialized
+[2025-08-23 15:00:13.609] Game1.Initialize: RestartManager references set
+[2025-08-23 15:00:13.612] Game1.Initialize: Save system initialized
+[2025-08-23 15:00:13.613] Game1.Initialize: Creating door...
+[2025-08-23 15:00:13.614] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 15:00:13.623] Game1.Initialize: Player references set in NPCs
+[2025-08-23 15:00:13.624] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 15:00:13.624] Game1.Initialize: UIManager reference set
+[2025-08-23 15:00:13.625] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 15:00:13.625] Game1.Initialize: Save data set
+[2025-08-23 15:00:13.626] Game1.Initialize: Starting level 1...
+[2025-08-23 15:00:13.705] Game1.Initialize: Level 1 started
+[2025-08-23 15:00:13.712] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 15:00:13.718] Game1.Initialize: Tile colors initialized
+[2025-08-23 15:00:13.719] Game1.Initialize: Pebble events subscribed
+[2025-08-23 15:00:13.720] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 15:00:13.996] Game1.LoadContent: Setting level system references...
+[2025-08-23 15:00:13.997] Game1.LoadContent: Level system references set
+[2025-08-23 15:00:14.132] Game1.Initialize: Initialization completed successfully!
+[2025-08-23 15:52:19.351] Game1.Initialize: Starting initialization...
+[2025-08-23 15:52:19.492] Game1.Initialize: GameSettings loaded
+[2025-08-23 15:52:19.494] Game1.Initialize: ResolutionManager initialized
+[2025-08-23 15:52:19.496] Game1.Initialize: GameMap created
+[2025-08-23 15:52:19.511] Game1.Initialize: Player created
+[2025-08-23 15:52:19.512] Game1.Initialize: CameraManager created
+[2025-08-23 15:52:19.513] Game1.Initialize: UIManager created
+[2025-08-23 15:52:19.514] Game1.Initialize: Lists initialized
+[2025-08-23 15:52:19.515] Game1.Initialize: ConsoleDisplay created
+[2025-08-23 15:52:19.519] Game1.Initialize: QuestManager created
+[2025-08-23 15:52:19.519] Game1.Initialize: QuestManager Pebble events setup
+[2025-08-23 15:52:19.522] Game1.Initialize: DialogueManager created
+[2025-08-23 15:52:19.525] Game1.Initialize: Mayor created
+[2025-08-23 15:52:19.531] Game1.Initialize: Vendor created
+[2025-08-23 15:52:19.532] Game1.Initialize: AttackSystem created
+[2025-08-23 15:52:19.601] Game1.Initialize: InputHandler created
+[2025-08-23 15:52:19.602] Game1.Initialize: BatSpawnManager created
+[2025-08-23 15:52:19.606] Game1.Initialize: GameRestartManager created
+[2025-08-23 15:52:19.611] Game1.Initialize: LevelSystem created
+[2025-08-23 15:52:19.624] Game1.Initialize: EventSystem initialized
+[2025-08-23 15:52:19.625] Game1.Initialize: RestartManager references set
+[2025-08-23 15:52:19.628] Game1.Initialize: Save system initialized
+[2025-08-23 15:52:19.629] Game1.Initialize: Creating door...
+[2025-08-23 15:52:19.630] Game1.Initialize: Door created at position {X:2 Y:1}
+[2025-08-23 15:52:19.636] Game1.Initialize: Player references set in NPCs
+[2025-08-23 15:52:19.637] Game1.Initialize: Entities registered in AttackSystem
+[2025-08-23 15:52:19.637] Game1.Initialize: UIManager reference set
+[2025-08-23 15:52:19.638] Game1: Setting save data - _enemyKillCounts count: 0
+[2025-08-23 15:52:19.639] Game1.Initialize: Save data set
+[2025-08-23 15:52:19.639] Game1.Initialize: Starting level 1...
+[2025-08-23 15:52:19.695] Game1.Initialize: Level 1 started
+[2025-08-23 15:52:19.699] Game1.Initialize: ProjectileManager initialized
+[2025-08-23 15:52:19.703] Game1.Initialize: Tile colors initialized
+[2025-08-23 15:52:19.704] Game1.Initialize: Pebble events subscribed
+[2025-08-23 15:52:19.704] Game1.Initialize: Calling base.Initialize()...
+[2025-08-23 15:52:19.878] Game1.LoadContent: Setting level system references...
+[2025-08-23 15:52:19.878] Game1.LoadContent: Level system references set
+[2025-08-23 15:52:19.976] Game1.Initialize: Initialization completed successfully!

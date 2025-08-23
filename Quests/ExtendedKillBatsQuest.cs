@@ -108,6 +108,28 @@ namespace IsometricActionGame.Quests
             // Remove Pebble objective if it was added
             _objectives.RemoveAll(obj => obj.EnemyType == "Pebble");
         }
+        
+        /// <summary>
+        /// Reset quest after turning in to allow taking it again
+        /// Override to also reset objectives progress
+        /// Note: ExtendedKillBatsQuest is not meant to be repeatable - use SimpleKillBatsQuest for repeats
+        /// </summary>
+        public override void ResetAfterTurnIn()
+        {
+            if (IsTurnedIn)
+            {
+                // Reset base quest state
+                base.ResetAfterTurnIn();
+                
+                // Reset objectives progress
+                foreach (var objective in _objectives)
+                {
+                    objective.Current = 0;
+                }
+                
+                System.Diagnostics.Debug.WriteLine($"ExtendedKillBatsQuest: Reset after turn in - objectives progress cleared");
+            }
+        }
 
         public void IncreaseReward(int additionalGold)
         {

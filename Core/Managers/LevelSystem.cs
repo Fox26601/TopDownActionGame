@@ -65,6 +65,10 @@ namespace IsometricActionGame
         private Dictionary<string, int> _enemyKillCounts;
         private TimeSpan _totalPlayTime;
         
+        // Level timing
+        private DateTime _levelStartTime;
+        private bool _isLevelTiming = false;
+        
         // Level transition UI
         private LevelTransitionPanel _transitionPanel;
         
@@ -259,6 +263,10 @@ namespace IsometricActionGame
         {
             _eventSystem.Subscribe<object>(GameEvents.DOOR_OPENED, OnDoorOpened);
             _eventSystem.Subscribe<object>(GameEvents.NEXT_LEVEL_TRIGGERED, OnNextLevelTriggered);
+            _eventSystem.Subscribe<object>(GameEvents.ENEMY_DEFEATED, OnEnemyDefeated);
+            // Count only return quests (quests turned in to Mayor) to avoid duplication
+            _eventSystem.Subscribe<object>(GameEvents.RETURN_QUEST_COMPLETED, OnQuestCompleted);
+            _eventSystem.Subscribe<object>(GameEvents.ITEM_PICKED_UP, OnItemPickedUp);
         }
         
         /// <summary>
@@ -328,6 +336,18 @@ namespace IsometricActionGame
         }
         
         /// <summary>
+        /// Get current level play time
+        /// </summary>
+        public TimeSpan GetCurrentLevelPlayTime()
+        {
+            if (_isLevelTiming)
+            {
+                return DateTime.UtcNow - _levelStartTime;
+            }
+            return TimeSpan.Zero;
+        }
+        
+        /// <summary>
         /// Start a specific level
         /// </summary>
         public void StartLevel(int levelNumber)
@@ -346,6 +366,10 @@ namespace IsometricActionGame
             
             _currentLevel = levelNumber;
             _isLevelCompleted = false;
+            
+            // Start level timing
+            _levelStartTime = DateTime.UtcNow;
+            _isLevelTiming = true;
             
             _eventSystem.Publish(GameEvents.LEVEL_STARTED, new { LevelNumber = levelNumber, LevelData = _levelData[levelNumber] });
             _console?.AddMessage($"Starting Level {levelNumber}: {_levelData[levelNumber].Name}", GameConstants.Colors.CONSOLE_CYAN);
@@ -502,12 +526,18 @@ namespace IsometricActionGame
                 {
                     _isLevelCompleted = true;
                     
+                    // Calculate total play time for the level
+                    TimeSpan levelPlayTime = DateTime.UtcNow - _levelStartTime;
+                    
+                    // Stop level timing
+                    _isLevelTiming = false;
+                    
                     // Update level progress
                     if (_levelProgress.ContainsKey(_currentLevel))
                     {
                         var progress = _levelProgress[_currentLevel];
                         progress.IsCompleted = true;
-                        progress.BestTime = TimeSpan.FromMinutes(2); // This would be calculated from actual time
+                        progress.BestTime = levelPlayTime;
                         
                         // Unlock next level
                         if (_currentLevel < _maxLevel)
@@ -537,17 +567,32 @@ namespace IsometricActionGame
             if (_levelProgress.ContainsKey(_currentLevel))
             {
                 _levelProgress[_currentLevel].EnemiesKilled++;
+                System.Diagnostics.Debug.WriteLine($"LevelSystem.OnEnemyDefeated: Enemies killed for level {_currentLevel}: {_levelProgress[_currentLevel].EnemiesKilled}");
             }
         }
         
         /// <summary>
-        /// Handle quest completed event
+        /// Handle return quest completed event (quest turned in to Mayor)
+        /// Only counts quests that are actually turned in for rewards to avoid duplication
         /// </summary>
         private void OnQuestCompleted(object data)
         {
             if (_levelProgress.ContainsKey(_currentLevel))
             {
                 _levelProgress[_currentLevel].QuestsCompleted++;
+                System.Diagnostics.Debug.WriteLine($"LevelSystem.OnQuestCompleted: Return quests completed for level {_currentLevel}: {_levelProgress[_currentLevel].QuestsCompleted}");
+            }
+        }
+
+        /// <summary>
+        /// Handle item picked up event
+        /// </summary>
+        private void OnItemPickedUp(object data)
+        {
+            if (_levelProgress.ContainsKey(_currentLevel))
+            {
+                _levelProgress[_currentLevel].ItemsCollected++;
+                System.Diagnostics.Debug.WriteLine($"LevelSystem.OnItemPickedUp: Items collected for level {_currentLevel}: {_levelProgress[_currentLevel].ItemsCollected}");
             }
         }
         
@@ -723,15 +768,27 @@ namespace IsometricActionGame
                         }
                     }
                     
+                    // Use real-time data instead of level progress data
+                    var currentEnemiesKilled = levelProgress.EnemiesKilled;
+                    var currentQuestsCompleted = levelProgress.QuestsCompleted;
+                    var currentItemsCollected = levelProgress.ItemsCollected;
+                    var currentLevelTime = GetCurrentLevelPlayTime();
+                    
+                    System.Diagnostics.Debug.WriteLine($"LevelSystem.ShowLevelTransitionPanel: Level {_currentLevel} statistics:");
+                    System.Diagnostics.Debug.WriteLine($"  Enemies Killed: {currentEnemiesKilled}");
+                    System.Diagnostics.Debug.WriteLine($"  Quests Completed: {currentQuestsCompleted}");
+                    System.Diagnostics.Debug.WriteLine($"  Items Collected: {currentItemsCollected}");
+                    System.Diagnostics.Debug.WriteLine($"  Level Time: {currentLevelTime}");
+                    
                     // Show transition panel with level data
                     _transitionPanel.Show(
                         _currentLevel,
                         nextLevelData.Name,
                         nextLevelData.Description,
-                        levelProgress.EnemiesKilled,
-                        levelProgress.QuestsCompleted,
-                        levelProgress.ItemsCollected,
-                        levelProgress.BestTime
+                        currentEnemiesKilled,
+                        currentQuestsCompleted,
+                        currentItemsCollected,
+                        currentLevelTime
                     );
                     
                     _console?.AddMessage("Level transition panel shown successfully!", GameConstants.Colors.CONSOLE_CYAN);

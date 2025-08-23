@@ -107,6 +107,25 @@ namespace IsometricActionGame.Events.EventData
             IsFull = isFull;
         }
     }
+    
+    /// <summary>
+    /// Event data for automatic health potion assignment to quick access
+    /// </summary>
+    public class HealthPotionAutoAssignedEventData : BaseEventData
+    {
+        public int SlotIndex { get; }
+        public int Quantity { get; }
+        public bool WasFromInventory { get; }
+        
+        public HealthPotionAutoAssignedEventData(int slotIndex, int quantity, bool wasFromInventory) : base("Inventory")
+        {
+            SlotIndex = slotIndex;
+            Quantity = quantity;
+            WasFromInventory = wasFromInventory;
+        }
+    }
 }
+
+
 
 

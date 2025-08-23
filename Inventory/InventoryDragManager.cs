@@ -32,18 +32,33 @@ namespace IsometricActionGame.Inventory
         /// <returns>True if drag operation started successfully</returns>
         public bool StartDragFromGrid(int x, int y, Vector2 mousePosition)
         {
+            System.Diagnostics.Debug.WriteLine($"StartDragFromGrid: Called with coordinates ({x}, {y})");
+            
             var item = _inventory.GetItem(x, y);
-            if (item == null) return false;
+            if (item == null)
+            {
+                System.Diagnostics.Debug.WriteLine($"StartDragFromGrid: No item found at ({x}, {y})");
+                return false;
+            }
+
+            System.Diagnostics.Debug.WriteLine($"StartDragFromGrid: Found item: {item.Name}");
 
             // Create a copy of the item for dragging
             var draggedItem = ItemFactory.CreateItemInstance(item);
-            if (draggedItem == null) return false;
+            if (draggedItem == null)
+            {
+                System.Diagnostics.Debug.WriteLine($"StartDragFromGrid: Failed to create item instance");
+                return false;
+            }
+
+            System.Diagnostics.Debug.WriteLine($"StartDragFromGrid: Created dragged item: {draggedItem.Name}");
 
             _dragState.StartDrag(draggedItem, mousePosition, new Point(x, y), false);
             
             // Remove the original item from the grid
             _inventory.RemoveItem(x, y);
             
+            System.Diagnostics.Debug.WriteLine($"StartDragFromGrid: Successfully started drag operation");
             return true;
         }
 
@@ -55,18 +70,33 @@ namespace IsometricActionGame.Inventory
         /// <returns>True if drag operation started successfully</returns>
         public bool StartDragFromQuickAccess(int slot, Vector2 mousePosition)
         {
+            System.Diagnostics.Debug.WriteLine($"StartDragFromQuickAccess: Called with slot {slot}");
+            
             var item = _inventory.GetQuickAccessItem(slot);
-            if (item == null) return false;
+            if (item == null)
+            {
+                System.Diagnostics.Debug.WriteLine($"StartDragFromQuickAccess: No item found in slot {slot}");
+                return false;
+            }
+
+            System.Diagnostics.Debug.WriteLine($"StartDragFromQuickAccess: Found item: {item.Name}");
 
             // Create a copy of the item for dragging
             var draggedItem = ItemFactory.CreateItemInstance(item);
-            if (draggedItem == null) return false;
+            if (draggedItem == null)
+            {
+                System.Diagnostics.Debug.WriteLine($"StartDragFromQuickAccess: Failed to create item instance");
+                return false;
+            }
+
+            System.Diagnostics.Debug.WriteLine($"StartDragFromQuickAccess: Created dragged item: {draggedItem.Name}");
 
             _dragState.StartDrag(draggedItem, mousePosition, new Point(slot, 0), true);
             
             // Remove the original item from quick access
             _inventory.RemoveQuickAccessItem(slot);
             
+            System.Diagnostics.Debug.WriteLine($"StartDragFromQuickAccess: Successfully started drag operation");
             return true;
         }
 
@@ -78,7 +108,13 @@ namespace IsometricActionGame.Inventory
         /// <returns>True if drop operation completed successfully</returns>
         public bool DropToGrid(int x, int y)
         {
-            if (!_dragState.IsValid()) return false;
+            System.Diagnostics.Debug.WriteLine($"DropToGrid: Called with coordinates ({x}, {y})");
+            
+            if (!_dragState.IsValid())
+            {
+                System.Diagnostics.Debug.WriteLine($"DropToGrid: Invalid drag state");
+                return false;
+            }
 
             var targetItem = _inventory.GetItem(x, y);
             
@@ -94,10 +130,11 @@ namespace IsometricActionGame.Inventory
                 return true;
             }
 
-            // Handle stacking
+            // Handle stacking (but never stack health potions)
             if (targetItem != null && 
                 targetItem.GetType() == _dragState.DraggedItem.GetType() && 
-                targetItem.IsStackable)
+                targetItem.IsStackable &&
+                !(_dragState.DraggedItem is Items.HealthPotion))
             {
                 return HandleStacking(x, y, targetItem);
             }
@@ -171,10 +208,11 @@ namespace IsometricActionGame.Inventory
                 return false;
             }
 
-            // Handle stacking
+            // Handle stacking (but never stack health potions)
             if (targetItem != null && 
                 targetItem.GetType() == _dragState.DraggedItem.GetType() && 
-                targetItem.IsStackable)
+                targetItem.IsStackable &&
+                !(_dragState.DraggedItem is Items.HealthPotion))
             {
                 return HandleQuickAccessStacking(slot, targetItem);
             }

@@ -100,9 +100,9 @@ namespace IsometricActionGame.Core.Data
         // Spawn Constants
         public static class Spawn
         {
-            public const int MAX_BATS_WITH_QUEST = 2; // Maximum bats when quest is active
+            public const int MAX_BATS_WITH_QUEST = 5; // Maximum bats when quest is active
             public const int MIN_BATS_ALWAYS = 1; // Minimum bats when quest is not active
-            public const float BAT_SPAWN_COOLDOWN = 20f; // 20 seconds cooldown between bat spawns
+            public const float BAT_SPAWN_COOLDOWN = 10f; // 10 seconds cooldown between bat spawns
         }
 
         // Interaction Constants
@@ -171,6 +171,13 @@ namespace IsometricActionGame.Core.Data
             public const float FONT_SIZE_MEDIUM = 16f;
             public const float FONT_SIZE_LARGE = 24f;
             public const float FONT_SIZE_TITLE = 32f;
+            
+            // Inventory constants
+            public const int INVENTORY_SLOT_SIZE = 48;
+            public const int INVENTORY_SLOT_PADDING = 4;
+            public const float INVENTORY_MARGIN = 20f;
+            public const float INVENTORY_GOLD_SPACING = 10f;
+            public const float INVENTORY_INSTRUCTION_SPACING = 10f;
         }
 
         // World Constants
@@ -276,7 +283,7 @@ namespace IsometricActionGame.Core.Data
         public static class Probability
         {
             public const double GOLD_DROP_CHANCE = 0.5;
-            public const double HEALTH_POTION_DROP_CHANCE = 0.3;
+            public const double HEALTH_POTION_DROP_CHANCE = 0.5;
         }
 
         // Item Constants

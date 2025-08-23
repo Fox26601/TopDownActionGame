@@ -228,8 +228,8 @@ namespace IsometricActionGame
         {
             if (_player == null || !_gameStarted) return;
             
-            // Quick access hotkeys (1-9 keys)
-            for (int i = 0; i < 9; i++)
+            // Quick access hotkeys (1-6 keys, matching Inventory.QUICK_ACCESS_SLOTS)
+            for (int i = 0; i < Inventory.Inventory.QUICK_ACCESS_SLOTS; i++)
             {
                 if (IsKeyJustPressed(Keys.D1 + i))
                 {
