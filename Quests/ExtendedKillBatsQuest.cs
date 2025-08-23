@@ -112,7 +112,7 @@ namespace IsometricActionGame.Quests
         /// <summary>
         /// Reset quest after turning in to allow taking it again
         /// Override to also reset objectives progress
-        /// Note: ExtendedKillBatsQuest is not meant to be repeatable - use SimpleKillBatsQuest for repeats
+
         /// </summary>
         public override void ResetAfterTurnIn()
         {

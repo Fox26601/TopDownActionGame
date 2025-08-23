@@ -87,7 +87,7 @@ namespace IsometricActionGame.Quests
             _goldReward = data.GetValue<int>("GoldReward", 0);
             _questType = data.GetValue<string>("QuestType", "Unknown");
             _hasPebbleObjective = data.GetValue<bool>("HasPebbleObjective", false);
-            // Note: OriginalQuest reference will need to be restored by QuestManager
+
             // This is a limitation of the current save system
         }
     }

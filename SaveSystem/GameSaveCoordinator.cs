@@ -109,7 +109,7 @@ namespace IsometricActionGame.SaveSystem
                 if (player.Inventory != null)
                 {
                     gameData.PlayerData.InventoryItems.Clear();
-                    // TODO: Implement proper inventory saving when inventory structure is finalized
+        
                     // For now, we'll save basic inventory data
                 }
             }
@@ -270,7 +270,7 @@ namespace IsometricActionGame.SaveSystem
                 // Load inventory - simplified for now
                 if (player.Inventory != null && gameData.PlayerData.InventoryItems != null)
                 {
-                    // TODO: Implement proper inventory loading when inventory structure is finalized
+        
                     // For now, we'll skip inventory loading
                 }
             }

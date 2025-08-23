@@ -623,7 +623,7 @@ namespace IsometricActionGame.Inventory
         }
 
         // These methods are now handled by the renderer
-        // TODO: Move to renderer if needed for drag and drop
+        
         
         public void Draw(SpriteBatch spriteBatch, SpriteFont font)
         {

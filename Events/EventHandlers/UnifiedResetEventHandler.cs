@@ -59,7 +59,7 @@ namespace IsometricActionGame.Events.EventHandlers
         
         public void UnsubscribeFromEvents()
         {
-            // Note: Unsubscribe methods are not implemented in the current GameEventSystem
+
             // This is a placeholder for future implementation
         }
         

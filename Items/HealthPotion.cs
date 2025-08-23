@@ -61,7 +61,7 @@ namespace IsometricActionGame.Items
                 player.Heal(HealAmount);
                 System.Diagnostics.Debug.WriteLine($"HealthPotion.Use: Heal completed, new health: {player.CurrentHealth}/{player.MaxHealth}");
                 
-                // Note: Quantity is decremented in Inventory.UseQuickAccessItem
+    
                 // Do not decrement here to avoid double decrement
                 return true;
             }

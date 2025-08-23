@@ -566,7 +566,7 @@ public class Game1 : Game
     {
         try
         {
-            System.Diagnostics.Debug.WriteLine("Game1.HandleRestartFromDeath: Called");
+            // Handle restart from death
             
             // Hide death panel
             _deathPanel?.Hide();
@@ -581,7 +581,7 @@ public class Game1 : Game
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Game1.HandleRestartFromDeath: Error - {ex.Message}");
+            // Error in restart from death
             _console?.AddMessage($"Error restarting from death: {ex.Message}", GameConstants.Colors.CONSOLE_RED);
         }
     }
@@ -1786,7 +1786,7 @@ public class Game1 : Game
 
     /// <summary>
     /// Remove dead enemies from the game world after their death animation completes
-    /// Note: This is now handled by the event system, but kept for compatibility
+    
     /// </summary>
     private void RemoveDeadEnemies()
     {
@@ -2153,7 +2153,7 @@ public class Game1 : Game
                 if (extendedQuest != null)
                 {
                     extendedQuest.Reset();
-                    System.Diagnostics.Debug.WriteLine("Game1.ReinitializeGameSystems: Extended quest reset directly");
+                    // Extended quest reset directly
                 }
                 
                 // Clear quest lists safely (if QuestManager has such methods)

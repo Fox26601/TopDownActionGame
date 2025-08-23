@@ -706,7 +706,7 @@ namespace IsometricActionGame.Dialogue
 
             _backgroundTexture?.Dispose();
             _borderTexture?.Dispose();
-            // Note: SpriteFont doesn't need to be disposed
+
 
             _disposed = true;
         }

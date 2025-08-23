@@ -72,7 +72,7 @@ namespace IsometricActionGame.Graphics
             _graphics = graphics;
             _graphicsDevice = graphicsDevice;
             
-            // Note: GraphicsDevice events are handled by MonoGame internally
+
             // We'll update viewport manually when needed
             
             UpdateViewport();

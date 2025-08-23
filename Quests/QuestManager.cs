@@ -31,30 +31,23 @@ namespace IsometricActionGame.Quests
 
         public QuestManager()
         {
-            System.Diagnostics.Debug.WriteLine("QuestManager: Constructor called");
+            // QuestManager constructor
             
             _activeQuests = new List<Quest>();
             _completedQuests = new List<Quest>();
             _refusedQuests = new List<Quest>();
             
-            System.Diagnostics.Debug.WriteLine("QuestManager: Creating ExtendedKillBatsQuest");
+            // Create quest instances
             _extendedKillBatsQuest = new ExtendedKillBatsQuest();
-            System.Diagnostics.Debug.WriteLine($"QuestManager: ExtendedKillBatsQuest created: {_extendedKillBatsQuest != null}");
-            
-            System.Diagnostics.Debug.WriteLine("QuestManager: Creating SimpleKillBatsQuest");
             _simpleKillBatsQuest = new SimpleKillBatsQuest();
-            System.Diagnostics.Debug.WriteLine($"QuestManager: SimpleKillBatsQuest created: {_simpleKillBatsQuest != null}");
             
             // Subscribe to quest completion events to automatically move completed quests
             _extendedKillBatsQuest.OnQuestCompleted += (quest) => CompleteQuest(quest);
             _simpleKillBatsQuest.OnQuestCompleted += (quest) => CompleteQuest(quest);
             
-            System.Diagnostics.Debug.WriteLine("QuestManager: Constructor completed");
+            // Constructor completed
         }
         
-        /// <summary>
-        /// Subscribe to events for Pebble state tracking
-        /// </summary>
         public void SubscribeToPebbleEvents()
         {
             var eventSystem = Events.GameEventSystem.Instance;
@@ -67,9 +60,6 @@ namespace IsometricActionGame.Quests
             }
         }
         
-        /// <summary>
-        /// Handle enemy defeated events to track Pebble state
-        /// </summary>
         private void OnEnemyDefeated(object data)
         {
             try
@@ -79,33 +69,27 @@ namespace IsometricActionGame.Quests
                 if (enemyType == "Pebble" && !_isPebbleDefeated)
                 {
                     _isPebbleDefeated = true;
-                    System.Diagnostics.Debug.WriteLine("QuestManager: Pebble has been defeated!");
+                    // Pebble has been defeated
                     OnPebbleDefeated?.Invoke();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                System.Diagnostics.Debug.WriteLine($"QuestManager.OnEnemyDefeated: Error - {ex.Message}");
+                // Error handling enemy defeated event
             }
         }
         
-        /// <summary>
-        /// Handle game restart events to reset Pebble state
-        /// </summary>
         private void OnGameRestarted(object data)
         {
             ResetPebbleState();
         }
         
-        /// <summary>
-        /// Reset Pebble state
-        /// </summary>
         public void ResetPebbleState()
         {
             if (_isPebbleDefeated)
             {
                 _isPebbleDefeated = false;
-                System.Diagnostics.Debug.WriteLine("QuestManager: Pebble state reset");
+                // Pebble state reset
                 OnPebbleStateReset?.Invoke();
             }
         }
@@ -230,9 +214,6 @@ namespace IsometricActionGame.Quests
             }
         }
         
-        /// <summary>
-        /// Publish quest reward event with quest-specific data
-        /// </summary>
         private void PublishQuestRewardEvent(Quest quest)
         {
             int goldReward = 0;
@@ -260,9 +241,6 @@ namespace IsometricActionGame.Quests
             Events.UnifiedEventSystem.Instance?.PublishQuestRewardGranted(quest, goldReward, questType, hasPebbleObjective);
         }
         
-        /// <summary>
-        /// Reset quest after turning in to allow taking it again
-        /// </summary>
         private void ResetQuestAfterTurnIn(Quest quest)
         {
             if (quest == _extendedKillBatsQuest)
@@ -325,9 +303,7 @@ namespace IsometricActionGame.Quests
             return _simpleKillBatsQuest.CanBeRefused();
         }
         
-        /// <summary>
-        /// Automatically assign return quest when main quest is completed
-        /// </summary>
+        // Automatically assign return quest when main quest is completed
         private void AutoAssignReturnQuest(Quest originalQuest)
         {
             if (_returnToMayorQuest != null)
@@ -345,9 +321,7 @@ namespace IsometricActionGame.Quests
             OnReturnQuestAutoAssigned?.Invoke(_returnToMayorQuest);
         }
         
-        /// <summary>
-        /// Complete the return quest when player interacts with Mayor
-        /// </summary>
+        // Complete the return quest when player interacts with Mayor
         public void CompleteReturnQuest()
         {
             if (_returnToMayorQuest != null && _returnToMayorQuest.IsActive && !_returnToMayorQuest.IsCompleted)
@@ -361,42 +335,32 @@ namespace IsometricActionGame.Quests
             }
         }
         
-        /// <summary>
-        /// Get the current return quest if any
-        /// </summary>
+        // Get the current return quest if any
         public ReturnToMayorQuest GetReturnQuest()
         {
             return _returnToMayorQuest;
         }
         
-        /// <summary>
-        /// Check if player has a completed quest that needs to be turned in
-        /// </summary>
+        // Check if player has a completed quest that needs to be turned in
         public bool HasCompletedQuestToTurnIn()
         {
             return (_extendedKillBatsQuest != null && _extendedKillBatsQuest.IsCompleted && !_extendedKillBatsQuest.IsTurnedIn) ||
                    (_simpleKillBatsQuest != null && _simpleKillBatsQuest.IsCompleted && !_simpleKillBatsQuest.IsTurnedIn);
         }
         
-        /// <summary>
-        /// Check if Pebble is defeated (for extended quest availability)
-        /// </summary>
+        // Check if Pebble is defeated (for extended quest availability)
         public bool IsPebbleDefeated()
         {
             return _isPebbleDefeated;
         }
         
-        /// <summary>
-        /// Check if extended quest was ever completed (for simple quest availability)
-        /// </summary>
+        // Check if extended quest was ever completed (for simple quest availability)
         public bool WasExtendedQuestEverCompleted()
         {
             return _extendedQuestWasEverCompleted;
         }
         
-        /// <summary>
-        /// Helper method to extract property values from anonymous objects
-        /// </summary>
+        // Helper method to extract property values from anonymous objects
         private T GetPropertyValue<T>(object obj, string propertyName)
         {
             if (obj == null) return default(T);
@@ -428,9 +392,7 @@ namespace IsometricActionGame.Quests
 
 
         
-        /// <summary>
-        /// Clear all quests
-        /// </summary>
+        // Clear all quests and reset their states
         public void ClearQuests()
         {
             _activeQuests.Clear();
@@ -451,9 +413,7 @@ namespace IsometricActionGame.Quests
             // Don't reset _extendedQuestWasEverCompleted - preserve quest completion history
         }
         
-        /// <summary>
-        /// Add a quest to the active quests
-        /// </summary>
+        // Add a quest to the active quests
         public void AddQuest(Quest quest)
         {
             if (quest != null && !_activeQuests.Contains(quest))
@@ -463,9 +423,7 @@ namespace IsometricActionGame.Quests
             }
         }
         
-        /// <summary>
-        /// Get all quests for save system
-        /// </summary>
+        // Get all quests for save system
         public List<Quest> GetAllQuests()
         {
             var allQuests = new List<Quest>();
@@ -480,9 +438,7 @@ namespace IsometricActionGame.Quests
             return allQuests;
         }
         
-        /// <summary>
-        /// Get quest by ID for save system
-        /// </summary>
+        // Get quest by ID for save system
         public Quest GetQuestById(string questId)
         {
             var allQuests = GetAllQuests();
