@@ -410,7 +410,9 @@ namespace IsometricActionGame.Quests
                 _simpleKillBatsQuest.Reset();
             }
             
-            // Don't reset _extendedQuestWasEverCompleted - preserve quest completion history
+            // Reset quest completion history after death/restart
+            _extendedQuestWasEverCompleted = false;
+            _isPebbleDefeated = false;
         }
         
         // Add a quest to the active quests
